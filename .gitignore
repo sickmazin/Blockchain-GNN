@@ -1,0 +1,14 @@
+# Generated dependency lock
+/uv.lock
+/pyproject.toml
+/.idea/
+/Blockchain-GNN.iml
+
+# Repository-local project guidance and exploratory notebook
+/assistant.md
+/AGENTS.md
+/GNNs_demo_v2.ipynb
+
+# Raw datasets are local inputs and must not be committed
+/datasets/
+
