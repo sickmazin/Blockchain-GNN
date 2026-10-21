@@ -14,7 +14,7 @@ from typing import Mapping, Sequence
 
 import pandas as pd
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 TGS_DATA = PROJECT_ROOT / "datasets" / "TGS_edgelists"
 ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
 EXPECTED_COLUMNS = ("source", "destination", "weight", "date", "snapshot")
@@ -179,8 +179,8 @@ def assign_windows(
 def aggregate_window(events: pd.DataFrame) -> pd.DataFrame:
     """Aggregate events by ordered pair, preserving event frequency and volume."""
     required = {"source", "destination", "weight"}
-    if not required.issubset(events.columns):
-        raise ValueError(f"events must contain {sorted(required)}")
+    #if not required.issubset(events.columns):
+    #    raise ValueError(f"events must contain {sorted(required)}")
     valid = events.dropna(subset=["source", "destination"])
     group_columns = ["source", "destination"]
     if "window" in valid:
