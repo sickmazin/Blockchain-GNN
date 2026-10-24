@@ -11,4 +11,6 @@
 
 # Raw datasets are local inputs and must not be committed
 /datasets/
-
+/reports/
+/tests/
+/docs/
