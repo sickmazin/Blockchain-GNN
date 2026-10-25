@@ -4,11 +4,6 @@ Every tunable choice lives in ``study_C.toml``. The resolved
 configuration is saved with each run so that metrics can be traced back to the
 exact parameters.
 
-TUTOR — perché le dataclass?
-    Leggere il TOML dà un dizionario annidato (``values["neural"]["lr"]``). Convertirlo in
-    dataclass dà autocompletamento nell'IDE, valori di default e un errore immediato se nel
-    TOML c'è una chiave scritta male. Ogni sezione ``[xxx]`` del TOML = una dataclass qui sotto.
-    Le dataclass sono già complete: devi scrivere solo ``load_config`` e ``validate``.
 """
 
 from __future__ import annotations
@@ -21,7 +16,7 @@ from typing import Any
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG = Path(__file__).resolve().parent / "study_C.toml"
 
-MODELS = ("random_forest", "mlp", "graphsage", "gat")
+MODELS = ("degree_baseline", "random_forest", "mlp", "graphsage", "gat")
 FEATURE_SETS = ("local", "all")
 
 
@@ -78,7 +73,8 @@ class NeuralConfig:
 @dataclass
 class GATConfig:
     heads: int = 4
-
+    attention_dropout : bool = False
+    ELU_activation: bool = False
 
 @dataclass
 class EvaluationConfig:
@@ -142,17 +138,6 @@ def _build(cls: type, values: dict[str, Any]) -> Any:
 
 def load_config(path: str | Path | None = None) -> StudyCConfig:
     """Read the TOML file into a validated ``StudyCConfig`` (missing keys keep defaults)."""
-    # TODO(tu):
-    # Passo 1: apri il file in modalità binaria ("rb") e leggilo con ``tomllib.load`` (libreria
-    #          standard da Python 3.11, non serve installare nulla).
-    # Passo 2: trasforma il dizionario in dataclass. Per ogni sezione, ad esempio:
-    #              NeuralConfig(**values.get("neural", {}))
-    #          e i valori top-level (``seed``) passali direttamente a StudyCConfig.
-    #          Suggerimento: in src/study_A/config.py la funzione ``_build`` fa questo in modo
-    #          generico e ricorsivo, rifiutando le chiavi sconosciute: puoi ispirarti a lei.
-    # Passo 3: i percorsi in [paths] nel TOML sono RELATIVI alla radice del progetto:
-    #          convertili con ``PROJECT_ROOT / value`` così lo script funziona da qualsiasi cartella.
-    # Passo 4: chiama ``validate(config)`` e restituisci la config.
     with open(Path(path) if path is not None else DEFAULT_CONFIG, mode="rb") as config:
         values = tomllib.load(config)
     config = _build(StudyCConfig, values)
@@ -163,14 +148,6 @@ def load_config(path: str | Path | None = None) -> StudyCConfig:
 
 def validate(config: StudyCConfig) -> None:
     """Fail fast on inconsistent settings, before any expensive step runs."""
-    # TODO(tu): solleva ValueError con un messaggio chiaro se:
-    #   - config.models.enabled contiene nomi non in MODELS, o è vuoto;
-    #   - config.features.feature_sets contiene nomi non in FEATURE_SETS, o è vuoto;
-    #   - NON vale 1 <= split.train_end < split.val_end  (altrimenti validazione vuota);
-    #   - run.device non è tra "auto", "cuda", "cpu";
-    #   - neural.seeds è vuoto, o dropout non è in [0, 1).
-    # Perché? Un errore di battitura nel TOML deve fermare il run subito, non dopo 20 minuti
-    # di addestramento.
     unknown = [v for v in config.models.enabled if v not in MODELS]
     if unknown or not config.models.enabled:
         raise ValueError(f"config.models.enabled must be a non-empty subset of {list(MODELS)}")

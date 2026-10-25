@@ -1,0 +1,76 @@
+# =============================================================================================
+# Study C — Licit/illicit classification of Bitcoin transactions (Elliptic dataset)
+# =============================================================================================
+# All experimental choices live here. On every run this file is copied into the run folder
+# (config.toml), so every metric stays linked to the exact parameters that produced it.
+# Each [xxx] section maps to a dataclass of the same name in src/study_C/config.py.
+
+seed = 42
+
+
+[run]
+run_id = "COMPLETO"            # folder name reports/study_C/runs/<run_id>/; "" = UTC date and time
+device = "auto"        # "auto" = GPU if available, otherwise CPU; or "cuda" / "cpu"
+
+
+[paths]
+data_dir = "datasets/elliptic_bitcoin_dataset"   # raw data (read-only)
+output_root = "reports/study_C"                  # runs go to reports/study_C/runs/<run_id>/
+
+
+[split]   # chronological split on the time steps (verified in data.py, not assumed)
+train_end = 34         # train      = steps 1 .. train_end
+val_end = 39           # validation = steps train_end+1 .. val_end
+                       # test       = steps val_end+1 .. last observed step
+# If the data profile shows steps other than 1..49, change these values and note it in the report.
+
+
+[features]
+# "local" = only the transaction's own features; "all" = local + features aggregated over neighbours.
+# The aggregated ones already carry graph information: comparing the two sets is what lets us
+# say whether the graph really helps. Every model is trained on each listed set.
+feature_sets = ["local", "all"]
+n_local = 93           # how many columns (after txId and time_step) are "local"; the rest are aggregated.
+                       # 93 + 72 comes from Weber et al. (2019): the CSV has no header,
+                       # so it is an ASSUMPTION to declare, not a fact verifiable from the data.
+standardize = true     # StandardScaler fit on train only (for MLP and GNNs; the RF does not need it)
+
+
+[models]
+# "degree_baseline" = non-learning reference: a transaction's score is its degree
+# in the graph visible to the phase. It measures what structure ALONE is worth (how many neighbours, not who).
+enabled = ["random_forest","mlp","graphsage","gat"] # possible choice : "random_forest","mlp","graphsage","gat"
+
+
+[random_forest]
+n_estimators = 500
+max_features = 50              # features considered at each split (Weber et al. use 50)
+class_weight = "balanced"      # weights inversely proportional to class frequency, computed on train
+n_jobs = -1                    # all CPU cores (the RF does not use the GPU)
+
+
+[neural]   # hyperparameters shared by MLP, GraphSAGE and GAT
+hidden_dim = 64
+num_layers = 3         # for GNNs = number of aggregated neighbourhood "hops"
+dropout = 0.1
+lr = 3e-3
+weight_decay = 5e-4
+max_epochs = 100000
+patience = 500          # early stopping: stop if validation PR-AUC does not improve for N epochs
+seeds = [3,6,12,24,42]   # every neural model is repeated with these seeds -> mean ± std. dev.
+
+
+[gat]
+heads = 2              # attention heads in the hidden layers
+attention_dropout = true
+ELU_activation = true
+
+[evaluation]
+# The probability threshold above which a transaction is "illicit" is chosen on VALIDATION
+# by maximising this metric, then applied unchanged to test.
+threshold_metric = "f1"
+
+
+[figures]
+formats = ["png"]
+dpi = 300

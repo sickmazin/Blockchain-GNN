@@ -1,15 +1,12 @@
 """Chronological train/validation/test split on the verified Elliptic time steps.
 
-Output: a ``phase`` column ("train" / "val" / "test") on every node, plus a
-manifest (``splits/split_manifest.csv``) and a per-phase summary.
 
-TUTOR — perché NON uno split casuale?
-    Con uno split casuale, transazioni dello stesso giorno finiscono sia in train sia in test:
-    il modello impara pattern "del momento" e il punteggio sul test è gonfiato. Nella realtà un
-    classificatore viene addestrato sul passato e usato sul futuro: lo split cronologico misura
-    proprio questo. In Elliptic il comportamento illecito CAMBIA nel tempo (dopo ~step 43 un
-    grande dark market chiude), quindi questa scelta cambia davvero i risultati.
-    AGENTS.md lo rende obbligatorio: "Random splits are prohibited for Elliptic".
+why NOT a random split?
+    With a random split, transactions from the same day end up in both train and test:
+    the model learns patterns "of the moment" and the test score is inflated. In practice a
+    classifier is trained on the past and used on the future: the chronological split measures
+    exactly that. In Elliptic illicit behaviour CHANGES over time (after ~step 43 a large
+    dark market shuts down)
 """
 
 from __future__ import annotations
@@ -36,8 +33,8 @@ def assign_phases(nodes: pd.DataFrame, split: SplitConfig) -> pd.Series:
 
 def split_summary(nodes: pd.DataFrame) -> pd.DataFrame:
     """One row per phase: step range, n_nodes, n_licit, n_illicit, n_unknown, illicit share."""
-    # Questa tabella va nel report (sezione "Data and methods") e mostra lo sbilanciamento.
-    # observed=False: una fase vuota compare comunque con conteggi 0 invece di sparire.
+    # This table goes into the report ("Data and methods" section) and shows the imbalance.
+    # observed=False: an empty phase still appears with 0 counts instead of disappearing.
     grouped = nodes.groupby("phase", observed=False)
     summary = pd.DataFrame({
         "step_min": grouped["time_step"].min(),
@@ -55,19 +52,19 @@ def check_split(nodes: pd.DataFrame, edges: pd.DataFrame) -> dict[str, Any]:
     """Verify the split is usable and leak-free; raise on violations, return audit numbers."""
     summary = split_summary(nodes)
 
-    # 1. Ogni fase deve avere almeno un'illecita e una lecita, altrimenti PR-AUC/F1 non esistono.
+    # 1. Every phase needs at least one illicit and one licit node, otherwise PR-AUC/F1 do not exist.
     for row in summary.itertuples():
         if not row.n_illicit or not row.n_licit:
             raise ValueError(
                 f"phase {row.phase!r} has {row.n_illicit} illicit and {row.n_licit} licit nodes: both classes are required for evaluation")
 
-    # 2. Gli step delle fasi devono essere disgiunti e in ordine cronologico.
+    # 2. Phase steps must be disjoint and in chronological order.
     for earlier, later in zip(summary.itertuples(), summary.iloc[1:].itertuples()):
         if not earlier.step_max < later.step_min:
             raise ValueError(
                 f"phases {earlier.phase!r} (max step {earlier.step_max}) and {later.phase!r} (min step {later.step_min}) overlap in time")
 
-    # 3. Archi tra fasi diverse: fase di src e di dst per ogni arco, conteggio per coppia.
+    # 3. Edges between different phases: phase of src and of dst for every edge, count per pair.
     phase_of = nodes.set_index("txId")["phase"].astype(str)
     src_phase = edges["src"].map(phase_of).fillna("missing")
     dst_phase = edges["dst"].map(phase_of).fillna("missing")
