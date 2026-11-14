@@ -13,6 +13,10 @@
 /datasets/
 /tests/
 
+# LaTeX build output: only the compiled report is published
+/out/*
+!/out/main.pdf
+
 # Report source: only the LaTeX report is published
 /docs/*
 !/docs/report/
