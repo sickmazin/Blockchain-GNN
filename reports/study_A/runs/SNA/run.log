@@ -1,0 +1,83 @@
+2026-10-23 20:30:33 | INFO | Using token profile C:\PROJECT\Blockchain-GNN\reports\study_A\profile\token_profile.csv
+2026-10-23 20:30:34 | INFO | Run SNA | tokens: RARI, SWAP, BITCOIN
+2026-10-23 20:59:47 | INFO | Cross-token overlap RARI–SWAP
+2026-10-23 20:59:49 | INFO | RARI: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\RARI)
+2026-10-23 20:59:53 | INFO | SWAP: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SWAP)
+2026-10-23 20:59:56 | INFO | Cross-token overlap RARI–BITCOIN
+2026-10-23 20:59:56 | INFO | RARI: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\RARI)
+2026-10-23 20:59:57 | INFO | BITCOIN: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\BITCOIN)
+2026-10-23 20:59:58 | INFO | Cross-token overlap SWAP–BITCOIN
+2026-10-23 20:59:58 | INFO | SWAP: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SWAP)
+2026-10-23 20:59:59 | INFO | BITCOIN: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\BITCOIN)
+2026-10-23 21:00:02 | INFO | Figure fig01_daily_activity saved
+2026-10-23 21:00:02 | INFO | Figure fig02_snapshot_replication saved
+2026-10-23 21:00:03 | INFO | Figure fig03_degree_strength_ccdf saved
+2026-10-23 21:00:04 | INFO | Figure fig04_tail_model_comparison saved
+2026-10-23 21:00:06 | INFO | Figure fig05_volume_strength_ccdf saved
+2026-10-23 21:00:06 | INFO | Figure fig06_concentration_curves saved
+2026-10-23 21:00:07 | INFO | Figure fig07_temporal_structure saved
+2026-10-23 21:00:07 | INFO | Figure fig08_small_world saved
+2026-10-23 21:00:07 | INFO | Figure fig09_rich_club saved
+2026-10-23 21:00:07 | INFO | Figure fig10_bowtie saved
+2026-10-23 21:00:08 | INFO | Figure fig11_centrality_correlation saved
+2026-10-23 21:00:08 | INFO | Figure fig12_rank_stability saved
+2026-10-23 21:00:08 | INFO | Figure fig13_turnover saved
+2026-10-23 21:00:09 | INFO | Figure fig14_communities saved
+2026-10-23 21:00:09 | INFO | Figure fig15_community_persistence saved
+2026-10-23 21:00:09 | INFO | Figure fig18_cross_token_overlap saved
+2026-10-23 21:00:10 | INFO | Figure fig19_community_overlap saved
+2026-10-23 21:00:10 | INFO | Figure fig16_1_community_quotient_RARI saved
+2026-10-23 21:00:11 | INFO | Figure fig17_1_network_sample_RARI saved
+2026-10-23 21:00:11 | INFO | Figure fig16_2_community_quotient_SWAP saved
+2026-10-23 21:00:13 | INFO | Figure fig17_2_network_sample_SWAP saved
+2026-10-23 21:00:13 | INFO | Figure fig16_3_community_quotient_BITCOIN saved
+2026-10-23 21:00:13 | INFO | Figure fig17_3_network_sample_BITCOIN saved
+2026-10-23 21:00:13 | INFO | Run SNA finished in 1780.0 s -> C:\PROJECT\Blockchain-GNN\reports\study_A\runs\SNA
+2026-10-23 21:45:28 | INFO | Profiling 84 token files with 6 workers
+2026-10-23 21:45:35 | INFO | Run SNA | reused: RARI, SWAP, BITCOIN | to analyse: POLS
+2026-10-23 21:47:28 | INFO | Using token profile C:\PROJECT\Blockchain-GNN\reports\study_A\profile\token_profile.csv
+2026-10-23 21:47:28 | INFO | Run SNA | reused: RARI, SWAP, BITCOIN | to analyse: SUPER
+2026-10-23 22:09:56 | INFO | Cross-token overlap RARI–SWAP
+2026-10-23 22:09:58 | INFO | RARI: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\RARI)
+2026-10-23 22:10:02 | INFO | SWAP: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SWAP)
+2026-10-23 22:10:05 | INFO | Cross-token overlap RARI–BITCOIN
+2026-10-23 22:10:06 | INFO | RARI: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\RARI)
+2026-10-23 22:10:06 | INFO | BITCOIN: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\BITCOIN)
+2026-10-23 22:10:08 | INFO | Cross-token overlap RARI–SUPER
+2026-10-23 22:10:10 | INFO | RARI: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\RARI)
+2026-10-23 22:10:12 | INFO | SUPER: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SUPER)
+2026-10-23 22:10:17 | INFO | Cross-token overlap SWAP–BITCOIN
+2026-10-23 22:10:17 | INFO | SWAP: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SWAP)
+2026-10-23 22:10:18 | INFO | BITCOIN: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\BITCOIN)
+2026-10-23 22:10:19 | INFO | Cross-token overlap SWAP–SUPER
+2026-10-23 22:10:20 | INFO | SWAP: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SWAP)
+2026-10-23 22:10:22 | INFO | SUPER: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SUPER)
+2026-10-23 22:10:27 | INFO | Cross-token overlap BITCOIN–SUPER
+2026-10-23 22:10:27 | INFO | BITCOIN: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\BITCOIN)
+2026-10-23 22:10:28 | INFO | SUPER: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\SUPER)
+2026-10-23 22:10:32 | INFO | Figure fig01_daily_activity saved
+2026-10-23 22:10:32 | INFO | Figure fig02_snapshot_replication saved
+2026-10-23 22:10:33 | INFO | Figure fig03_degree_strength_ccdf saved
+2026-10-23 22:10:36 | INFO | Figure fig04_tail_model_comparison saved
+2026-10-23 22:10:38 | INFO | Figure fig05_volume_strength_ccdf saved
+2026-10-23 22:10:39 | INFO | Figure fig06_concentration_curves saved
+2026-10-23 22:10:39 | INFO | Figure fig07_temporal_structure saved
+2026-10-23 22:10:40 | INFO | Figure fig08_small_world saved
+2026-10-23 22:10:40 | INFO | Figure fig09_rich_club saved
+2026-10-23 22:10:40 | INFO | Figure fig10_bowtie saved
+2026-10-23 22:10:40 | INFO | Figure fig11_centrality_correlation saved
+2026-10-23 22:10:41 | INFO | Figure fig12_rank_stability saved
+2026-10-23 22:10:41 | INFO | Figure fig13_turnover saved
+2026-10-23 22:10:41 | INFO | Figure fig14_communities saved
+2026-10-23 22:10:41 | INFO | Figure fig15_community_persistence saved
+2026-10-23 22:10:43 | INFO | Figure fig18_cross_token_overlap saved
+2026-10-23 22:10:44 | INFO | Figure fig19_community_overlap saved
+2026-10-23 22:10:44 | INFO | Figure fig16_1_community_quotient_RARI saved
+2026-10-23 22:10:45 | INFO | Figure fig17_1_network_sample_RARI saved
+2026-10-23 22:10:45 | INFO | Figure fig16_2_community_quotient_SWAP saved
+2026-10-23 22:10:47 | INFO | Figure fig17_2_network_sample_SWAP saved
+2026-10-23 22:10:47 | INFO | Figure fig16_3_community_quotient_BITCOIN saved
+2026-10-23 22:10:47 | INFO | Figure fig17_3_network_sample_BITCOIN saved
+2026-10-23 22:10:47 | INFO | Figure fig16_4_community_quotient_SUPER saved
+2026-10-23 22:10:49 | INFO | Figure fig17_4_network_sample_SUPER saved
+2026-10-23 22:10:49 | INFO | Run SNA finished in 1400.9 s -> C:\PROJECT\Blockchain-GNN\reports\study_A\runs\SNA

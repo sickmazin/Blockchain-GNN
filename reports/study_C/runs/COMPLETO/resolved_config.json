@@ -1,0 +1,67 @@
+{
+  "seed": 42,
+  "run": {
+    "run_id": "COMPLETO",
+    "device": "auto"
+  },
+  "paths": {
+    "data_dir": "C:\\PROJECT\\Blockchain-GNN\\datasets\\elliptic_bitcoin_dataset",
+    "output_root": "C:\\PROJECT\\Blockchain-GNN\\reports\\study_C"
+  },
+  "split": {
+    "train_end": 34,
+    "val_end": 39
+  },
+  "features": {
+    "feature_sets": [
+      "local",
+      "all"
+    ],
+    "n_local": 93,
+    "standardize": true
+  },
+  "models": {
+    "enabled": [
+      "random_forest",
+      "mlp",
+      "graphsage",
+      "gat"
+    ]
+  },
+  "random_forest": {
+    "n_estimators": 500,
+    "max_features": 50,
+    "class_weight": "balanced",
+    "n_jobs": -1
+  },
+  "neural": {
+    "hidden_dim": 64,
+    "num_layers": 3,
+    "dropout": 0.1,
+    "lr": 0.003,
+    "weight_decay": 0.0005,
+    "max_epochs": 100000,
+    "patience": 500,
+    "seeds": [
+      3,
+      6,
+      12,
+      24,
+      42
+    ]
+  },
+  "gat": {
+    "heads": 2,
+    "attention_dropout": true,
+    "ELU_activation": true
+  },
+  "evaluation": {
+    "threshold_metric": "f1"
+  },
+  "figures": {
+    "formats": [
+      "png"
+    ],
+    "dpi": 300
+  }
+}

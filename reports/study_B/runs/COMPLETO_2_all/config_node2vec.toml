@@ -1,0 +1,89 @@
+# =============================================================================================
+# Study B — Temporal link prediction (new directed links) on one ERC-20 network (TGS)
+# =============================================================================================
+# All experimental choices live here. On every run this file is copied into the run folder
+# (config.toml). Each [xxx] section maps to a dataclass of the same name in config.py.
+
+seed = 42
+
+
+[run]
+run_id = "COMPLETO_2"            # folder reports/study_B/runs/<run_id>/; "" = UTC date and time
+device = "auto"        # "auto" = GPU if available, otherwise CPU; or "cuda" / "cpu"
+
+
+[paths]
+data_dir = "datasets/TGS_edgelists"      # raw data (read-only)
+cache_dir = "reports/study_A/cache"      # deduplicated events already built by Study A (reused)
+output_root = "reports/study_B"
+
+
+[data]
+token = "SWAP"         # assistant.md §5.1: most unique address-to-address events after filters
+freq = "W-MON"         # disjoint calendar windows (pandas alias): "W-MON" weeks, "MS" months, "D" days
+
+
+[split]
+# Fractions of the TARGET windows (windows we predict), in chronological order.
+train_frac = 0.70
+val_frac = 0.15        # test = the rest
+min_history_windows = 4   # the first N windows are history only (never a target): too little past
+drop_partial_targets = true   # a first/last window covered by data for < 100% of its days is not a target
+
+
+[sampling]
+# For every positive (u, v) we draw n_neg negatives (u, v') with the SAME source u and v'
+# drawn uniformly among history nodes, such that (u, v') never had an edge before or in the window.
+n_neg_eval = 50        # fixed, saved negatives for validation/test (same for every model)
+n_neg_train = 5        # fresh negatives per epoch for GNN training
+# Evaluation negative sets (same n_neg_eval, same exclusion rules, different pool for v'):
+#   "uniform": any history node (mostly long-dormant addresses -> easy)
+#   "recent":  nodes that received a transfer in the last 4 windows before t (hard negatives)
+# GNN early stopping always uses the "uniform" validation pairs (same negatives as GNN training).
+negative_sets = ["uniform", "recent"]
+
+
+[models]
+enabled = ["node2vec"]
+# possible: "dst_popularity", "preferential_attachment", "common_neighbours", "node2vec", "graphsage", "gat"
+# dst_popularity = transfers received by v in the last 4 windows (ignores the source u): the floor
+# any model must beat to show it learned something about WHO u sends to, not just who is active.
+
+
+[node2vec]
+dim = 64
+walk_length = 20
+# biased walks via torch-cluster. Every [p, q] pair is fitted on val; the best uniform-val AP pair
+# is the only one scored on test (metrics/node2vec_grid.csv). [1, 1] is DeepWalk.
+# p: return parameter (low p = backtrack more); q: in-out parameter (high q = BFS-like, stay local).
+# Only q >= 1 and p <= q: torch-cluster 1.6.3 samples wrong walks otherwise (q < 1 is not reachable).
+pq_pairs = [[0.25, 1.0], [1.0, 1.0], [0.25, 4.0], [1.0, 4.0], [4.0, 4.0]]
+walks_per_node = 10
+context_size = 5
+epochs = 5
+lr = 0.01
+refit_every = 4        # re-learn the embeddings every N target windows (history < first window of the block)
+batch_size = 128
+
+[neural]   # shared by GraphSAGE and GAT
+hidden_dim = 32
+num_layers = 3
+dropout = 0.2
+lr = 1e-3
+weight_decay = 1e-5
+max_epochs = 500
+patience = 50          # early stopping on validation AP
+seeds = [0, 1, 2]
+
+
+[gat]
+heads = 4
+
+
+[evaluation]
+hits_k = [1, 10]
+
+
+[figures]
+formats = ["png"]
+dpi = 300

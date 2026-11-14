@@ -11,7 +11,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG = Path(__file__).resolve().parent / "study_B.toml"
 
 HEURISTICS = ("dst_popularity", "preferential_attachment", "common_neighbours")
-GNNS = ("graphsage", "gat")
+# *_recent: same GNN, trained and early-stopped on recent-receiver negatives; *_mixed: each training
+# negative drawn from the uniform or the recent pool with probability 1/2 (assistant.md §6.3)
+GNNS = ("graphsage", "gat", "graphsage_recent", "gat_recent", "graphsage_mixed", "gat_mixed")
 MODELS = HEURISTICS + ("node2vec",) + GNNS
 
 
@@ -64,6 +66,9 @@ class Node2VecConfig:
     lr: float = 0.01
     refit_every: int = 4
     batch_size: int = 128
+    # (p, q) pairs; the pair with the best uniform-val AP is the only one scored on test
+    pq_pairs: list[list[float]] = field(default_factory=lambda: [[0.25, 1.0], [1.0, 1.0], [0.25, 4.0],
+                                                                 [1.0, 4.0], [4.0, 4.0]])
 
 @dataclass
 class NeuralConfig:
@@ -161,6 +166,14 @@ def validate(config: StudyBConfig) -> None:
     if "uniform" not in sets or not set(sets) <= {"uniform", "recent"} or len(set(sets)) != len(sets):
         raise ValueError("sampling.negative_sets: distinct values from {uniform, recent}, must include "
                          "'uniform' (GNN early stopping uses the uniform validation pairs)")
+    if any(m.endswith(("_recent", "_mixed")) for m in config.models.enabled) and "recent" not in sets:
+        raise ValueError("*_recent / *_mixed GNNs need 'recent' in sampling.negative_sets "
+                         "(their early stopping uses the recent validation pairs)")
+    # torch-cluster 1.6.3 chains its rejection tests (if / else if), so the walk is node2vec-correct
+    # only for q >= 1 and p <= q (assistant.md §6.3)
+    pairs = config.node2vec.pq_pairs
+    if not pairs or not all(len(pq) == 2 and 0 < pq[0] <= pq[1] and pq[1] >= 1 for pq in pairs):
+        raise ValueError("node2vec.pq_pairs: non-empty list of [p, q] with q >= 1 and 0 < p <= q")
     if config.run.device not in ("auto", "cuda", "cpu"):
         raise ValueError(f"run.device must be auto/cuda/cpu, got {config.run.device!r}")
     if not config.neural.seeds or not 0 <= config.neural.dropout < 1:

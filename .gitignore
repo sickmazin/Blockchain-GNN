@@ -11,6 +11,28 @@
 
 # Raw datasets are local inputs and must not be committed
 /datasets/
-/reports/
 /tests/
-/docs/
+
+# Report source: only the LaTeX report is published
+/docs/*
+!/docs/report/
+
+# Run outputs: only the three runs cited in docs/report/main.tex, without the heavy
+# intermediates (regenerable from src/ + the saved config of each run)
+/reports/*
+!/reports/study_A/
+!/reports/study_B/
+!/reports/study_C/
+/reports/study_*/*
+!/reports/study_*/runs/
+/reports/study_*/runs/*
+!/reports/study_A/runs/SNA/
+!/reports/study_B/runs/COMPLETO_2_all/
+!/reports/study_C/runs/COMPLETO/
+/reports/study_A/runs/SNA/*/centralities/
+/reports/study_A/runs/SNA/*/communities/
+/reports/study_A/runs/SNA/*/graphs/
+/reports/study_A/runs/SNA/*/nodes/
+/reports/study_B/runs/COMPLETO_2_all/predictions/
+/reports/study_B/runs/COMPLETO_2_all/samples/
+/reports/study_C/runs/COMPLETO/models/

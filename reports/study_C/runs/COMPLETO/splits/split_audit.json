@@ -1,0 +1,22 @@
+{
+  "phase_steps": {
+    "train": [
+      1,
+      34
+    ],
+    "val": [
+      35,
+      39
+    ],
+    "test": [
+      40,
+      49
+    ]
+  },
+  "edge_phase_pairs": {
+    "test->test": 53491,
+    "train->train": 156843,
+    "val->val": 24021
+  },
+  "n_cross_phase_edges": 0
+}

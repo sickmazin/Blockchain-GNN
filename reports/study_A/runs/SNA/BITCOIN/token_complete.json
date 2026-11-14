@@ -1,0 +1,10 @@
+{
+  "analysis_fingerprint": "4b7ef6b56abdd250",
+  "finished_utc": "2026-10-23T19:00:13.913943+00:00",
+  "recognised_from": "analysis_status.csv",
+  "token": "BITCOIN",
+  "seconds": 732.1,
+  "failed_steps": 0,
+  "steps": 71,
+  "unique_events": 324332
+}

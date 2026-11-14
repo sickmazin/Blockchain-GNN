@@ -1,0 +1,46 @@
+{
+  "all": {
+    "n_edges": 234355,
+    "n_edges_both_labelled": 36624,
+    "n_edges_with_illicit": 2694,
+    "same_class_share": 0.9536915683704674,
+    "same_class_share_expected_random": 0.9042729347301022,
+    "label_assortativity": 0.5162451549207302,
+    "illicit_endpoint_share": 0.05040410659676715,
+    "p_neighbour_illicit_given_illicit": 0.5406283856988082,
+    "p_neighbour_illicit_given_licit": 0.024383230778078094
+  },
+  "test": {
+    "n_edges": 53491,
+    "n_edges_both_labelled": 9445,
+    "n_edges_with_illicit": 356,
+    "same_class_share": 0.973636844891477,
+    "same_class_share_expected_random": 0.9521808660151372,
+    "label_assortativity": 0.4486902435985493,
+    "illicit_endpoint_share": 0.024510322922181048,
+    "p_neighbour_illicit_given_illicit": 0.46220302375809935,
+    "p_neighbour_illicit_given_licit": 0.01351278015954849
+  },
+  "train": {
+    "n_edges": 156843,
+    "n_edges_both_labelled": 22898,
+    "n_edges_with_illicit": 2047,
+    "same_class_share": 0.947244300812298,
+    "same_class_share_expected_random": 0.8819054804721294,
+    "label_assortativity": 0.5532756354942325,
+    "illicit_endpoint_share": 0.06301860424491222,
+    "p_neighbour_illicit_given_illicit": 0.5814275814275814,
+    "p_neighbour_illicit_given_licit": 0.028151945933348868
+  },
+  "val": {
+    "n_edges": 24021,
+    "n_edges_both_labelled": 4281,
+    "n_edges_with_illicit": 291,
+    "same_class_share": 0.9441719224480262,
+    "same_class_share_expected_random": 0.9230882577858925,
+    "label_assortativity": 0.2741280337070089,
+    "illicit_endpoint_share": 0.0400607334734875,
+    "p_neighbour_illicit_given_illicit": 0.3032069970845481,
+    "p_neighbour_illicit_given_licit": 0.029078963377539846
+  }
+}

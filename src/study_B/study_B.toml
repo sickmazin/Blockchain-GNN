@@ -8,7 +8,7 @@ seed = 42
 
 
 [run]
-run_id = "COMPLETO_2"            # folder reports/study_B/runs/<run_id>/; "" = UTC date and time
+run_id = "COMPLETO_2_mixed"            # folder reports/study_B/runs/<run_id>/; "" = UTC date and time
 device = "auto"        # "auto" = GPU if available, otherwise CPU; or "cuda" / "cpu"
 
 
@@ -44,15 +44,23 @@ negative_sets = ["uniform", "recent"]
 
 
 [models]
-enabled = [ "dst_popularity", "preferential_attachment", "common_neighbours", "node2vec", "graphsage", "gat"]
-# possible: "dst_popularity", "preferential_attachment", "common_neighbours", "node2vec", "graphsage", "gat"
+enabled = ["graphsage_mixed", "gat_mixed"]
+# possible: "dst_popularity", "preferential_attachment", "common_neighbours", "node2vec", "graphsage", "gat",
+#           "graphsage_recent", "gat_recent" (same GNN, trained + early-stopped on recent-receiver negatives),
+#           "graphsage_mixed", "gat_mixed" (each training negative uniform or recent with prob. 1/2;
+#           early stopping on mean val AP over both negative sets)
 # dst_popularity = transfers received by v in the last 4 windows (ignores the source u): the floor
 # any model must beat to show it learned something about WHO u sends to, not just who is active.
 
 
 [node2vec]
 dim = 64
-walk_length = 20     # p = q = 1 (uniform walks): the only mode pyg-lib supports for now
+walk_length = 20
+# biased walks via torch-cluster. Every [p, q] pair is fitted on val; the best uniform-val AP pair
+# is the only one scored on test (metrics/node2vec_grid.csv). [1, 1] is DeepWalk.
+# p: return parameter (low p = backtrack more); q: in-out parameter (high q = BFS-like, stay local).
+# Only q >= 1 and p <= q: torch-cluster 1.6.3 samples wrong walks otherwise (q < 1 is not reachable).
+pq_pairs = [[0.25, 1.0], [1.0, 1.0], [0.25, 4.0], [1.0, 4.0], [4.0, 4.0]]
 walks_per_node = 10
 context_size = 5
 epochs = 5

@@ -1,0 +1,2 @@
+token,events_before,volume_before,mint_events,mint_volume,burn_events,burn_volume,self_loop_events,self_loop_volume,events_after,volume_after
+SWAP,507933,2.8883589133084024e+27,1,1e+26,153,4.835732918747447e+21,301,4.5804149283570536e+23,507478,2.787896036082648e+27

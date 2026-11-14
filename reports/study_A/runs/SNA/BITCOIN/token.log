@@ -1,0 +1,16 @@
+2026-10-23 20:30:35 | INFO | BITCOIN: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\BITCOIN)
+2026-10-23 20:30:36 | INFO | BITCOIN | window 2023-05-01 | 38,868 unique events
+2026-10-23 20:31:01 | INFO | BITCOIN | window 2023-06-01 | 51,207 unique events
+2026-10-23 20:31:24 | INFO | BITCOIN | window 2023-07-01 | 77,078 unique events
+2026-10-23 20:32:14 | INFO | BITCOIN | window 2023-08-01 | 84,804 unique events
+2026-10-23 20:33:09 | INFO | BITCOIN | window 2023-09-01 | 47,838 unique events
+2026-10-23 20:33:34 | INFO | BITCOIN | window 2023-10-01 | 24,537 unique events
+2026-10-23 20:33:45 | INFO | BITCOIN | window FULL_PERIOD | 324,332 unique events
+2026-10-23 20:35:49 | INFO | BITCOIN | tail frequency/in_degree: power law rejected by bootstrap GOF; preferred over exponential; other alternatives indistinguishable
+2026-10-23 20:36:21 | INFO | BITCOIN | tail frequency/out_degree: power law rejected by bootstrap GOF; heavy-tailed, better described by lognormal
+2026-10-23 20:37:35 | INFO | BITCOIN | tail frequency/undirected_degree: power law rejected by bootstrap GOF; preferred over lognormal, exponential; other alternatives indistinguishable
+2026-10-23 20:38:30 | INFO | BITCOIN | tail frequency/in_strength: power law not rejected; preferred over exponential; other alternatives indistinguishable
+2026-10-23 20:39:20 | INFO | BITCOIN | tail frequency/out_strength: power law not rejected; preferred over exponential; other alternatives indistinguishable
+2026-10-23 20:41:01 | INFO | BITCOIN | tail raw_volume/in_strength: power law rejected by bootstrap GOF; preferred over exponential; other alternatives indistinguishable
+2026-10-23 20:41:09 | INFO | BITCOIN | tail raw_volume/out_strength: power law rejected by bootstrap GOF; preferred over exponential; other alternatives indistinguishable
+2026-10-23 20:42:47 | INFO | BITCOIN | finished in 732.1 s

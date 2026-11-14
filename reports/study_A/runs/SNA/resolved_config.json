@@ -1,0 +1,97 @@
+{
+  "seed": 42,
+  "run": {
+    "task": "all",
+    "workers": 3,
+    "make_figures": true,
+    "run_id": "SNA"
+  },
+  "paths": {
+    "data_dir": "C:\\PROJECT\\Blockchain-GNN\\datasets\\TGS_edgelists",
+    "output_root": "C:\\PROJECT\\Blockchain-GNN\\reports\\study_A",
+    "cache_dir": "C:\\PROJECT\\Blockchain-GNN\\reports\\study_A\\cache"
+  },
+  "selection": {
+    "mode": "explicit",
+    "tokens": [
+      "RARI",
+      "SWAP",
+      "BITCOIN",
+      "SUPER"
+    ],
+    "n_tokens": 3,
+    "min_coverage_days": 365,
+    "max_nodes": 250000,
+    "rank_by": "unique_addresses",
+    "require_hex_addresses": true,
+    "profile_workers": 6
+  },
+  "windows": {
+    "freq": "MS",
+    "min_coverage": 0.8,
+    "include_full_period": true
+  },
+  "filters": {
+    "exclude_self_loops": true,
+    "exclude_zero_address": true,
+    "drop_zero_volume_pairs_in_volume_graphs": true
+  },
+  "centrality": {
+    "variants": [
+      "frequency",
+      "raw_volume",
+      "log1p_volume"
+    ],
+    "exact_max_nodes": 5000,
+    "betweenness_pivots": 3000,
+    "harmonic_top_candidates": 3000,
+    "harmonic_random_candidates": 3000,
+    "pagerank_damping": 0.85,
+    "top_k": 20,
+    "rank_stability_k": 100
+  },
+  "topology": {
+    "exact_path_max_nodes": 5000,
+    "path_sources": 500,
+    "rich_club_points": 40
+  },
+  "null_model": {
+    "n_null": 15,
+    "swaps_per_edge": 10,
+    "run_on_full_period": true
+  },
+  "communities": {
+    "resolution": 1.0,
+    "stability_seeds": 10,
+    "resolution_sweep": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "persistence_min_size": 10,
+    "top_central_per_community": 5
+  },
+  "distributions": {
+    "min_tail": 50,
+    "max_xmin_candidates": 200,
+    "gof_bootstrap": 100
+  },
+  "overlap": {
+    "enabled": true,
+    "min_shared": 30,
+    "permutations": 200,
+    "matrix_communities": 10
+  },
+  "figures": {
+    "formats": [
+      "png"
+    ],
+    "dpi": 300,
+    "embed_titles": true,
+    "drawing_max_nodes": 600,
+    "drawing_communities": 5,
+    "quotient_communities": 15
+  }
+}

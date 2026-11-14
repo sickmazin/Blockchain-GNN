@@ -1,0 +1,8 @@
+# Build: latexmk (pdflatex + bibtex). BibTeX runs on the output directory, so
+# point BIBINPUTS at this folder; otherwise MiKTeX picks up an unrelated
+# references.bib from its own package tree.
+use Cwd;
+my $here = getcwd();
+$here =~ s{^/([a-zA-Z])/}{$1:/};   # Git Bash/MSYS path -> Windows path for MiKTeX
+ensure_path('BIBINPUTS', $here);
+$pdf_mode = 1;

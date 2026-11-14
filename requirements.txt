@@ -1,0 +1,25 @@
+# Blockchain-GNN dependencies (Python 3.14, Windows, CUDA 12.8).
+# Install:  py -3.14 -m venv .venv  &&  .venv\Scripts\python -m pip install -r requirements.txt
+# torch is pinned to 2.11: pyg-lib and torch-cluster wheels are compiled for this exact torch + CUDA.
+--extra-index-url https://download.pytorch.org/whl/cu128
+--find-links https://data.pyg.org/whl/torch-2.11.0+cu128.html
+
+# Study A (SNA)
+leidenalg==0.12.0
+matplotlib==3.11.2
+networkx==3.6.1
+numpy==2.4.6
+pandas==3.0.6
+scipy==1.17.1
+scipy-stubs==1.17.1.5
+
+# Study C (Elliptic): Random Forest baseline
+scikit-learn==1.9.1
+
+# Study B and C: graph neural networks on GPU
+torch==2.11.0+cu128
+torch-geometric==2.8.1
+# random walks for torch_geometric.nn.Node2Vec (uniform walks only)
+pyg-lib==0.7.0+pt211cu128
+# biased node2vec walks (p != 1 or q != 1)
+torch-cluster==1.6.3+pt211cu128

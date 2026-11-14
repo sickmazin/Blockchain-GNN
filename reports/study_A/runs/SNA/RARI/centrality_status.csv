@@ -1,0 +1,1600 @@
+measure,status,error,warnings,seconds,method,sample_size,window,partial,variant
+in_degree_centrality,ok,,,0.0,exact,1675,2020-07-01,True,frequency
+out_degree_centrality,ok,,,0.0,exact,1675,2020-07-01,True,frequency
+in_strength,ok,,,0.0,exact,1675,2020-07-01,True,frequency
+out_strength,ok,,,0.0,exact,1675,2020-07-01,True,frequency
+pagerank,ok,,,0.003,"exact, damping=0.85",1675,2020-07-01,True,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1675,2020-07-01,True,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1675,2020-07-01,True,frequency
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,739,2020-07-01,True,frequency
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,739,2020-07-01,True,frequency
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,1675,2020-07-01,True,frequency
+betweenness,ok,,,0.102,exact,1675,2020-07-01,True,frequency
+harmonic_in,ok,,,0.107,exact,1675,2020-07-01,True,frequency
+harmonic_out,ok,,,0.107,exact,1675,2020-07-01,True,frequency
+in_degree_centrality,ok,,,0.0,exact,1675,2020-07-01,True,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1675,2020-07-01,True,raw_volume
+in_strength,ok,,,0.0,exact,1675,2020-07-01,True,raw_volume
+out_strength,ok,,,0.0,exact,1675,2020-07-01,True,raw_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",1675,2020-07-01,True,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1675,2020-07-01,True,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1675,2020-07-01,True,raw_volume
+eigenvector_in_lscc,ok,,,0.005,exact on LSCC,730,2020-07-01,True,raw_volume
+eigenvector_out_lscc,ok,,,0.005,exact on LSCC,730,2020-07-01,True,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on projection LCC,1675,2020-07-01,True,raw_volume
+betweenness,ok,,,0.107,exact,1675,2020-07-01,True,raw_volume
+harmonic_in,ok,,,0.137,exact,1675,2020-07-01,True,raw_volume
+harmonic_out,ok,,,0.137,exact,1675,2020-07-01,True,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1675,2020-07-01,True,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1675,2020-07-01,True,log1p_volume
+in_strength,ok,,,0.0,exact,1675,2020-07-01,True,log1p_volume
+out_strength,ok,,,0.0,exact,1675,2020-07-01,True,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",1675,2020-07-01,True,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1675,2020-07-01,True,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1675,2020-07-01,True,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,730,2020-07-01,True,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,730,2020-07-01,True,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,1675,2020-07-01,True,log1p_volume
+betweenness,ok,,,0.11,exact,1675,2020-07-01,True,log1p_volume
+harmonic_in,ok,,,0.145,exact,1675,2020-07-01,True,log1p_volume
+harmonic_out,ok,,,0.145,exact,1675,2020-07-01,True,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,2548,2020-08-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,2548,2020-08-01,False,frequency
+in_strength,ok,,,0.0,exact,2548,2020-08-01,False,frequency
+out_strength,ok,,,0.0,exact,2548,2020-08-01,False,frequency
+pagerank,ok,,,0.001,"exact, damping=0.85",2548,2020-08-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2548,2020-08-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2548,2020-08-01,False,frequency
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1028,2020-08-01,False,frequency
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1028,2020-08-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,2538,2020-08-01,False,frequency
+betweenness,ok,,,0.221,exact,2548,2020-08-01,False,frequency
+harmonic_in,ok,,,0.306,exact,2548,2020-08-01,False,frequency
+harmonic_out,ok,,,0.306,exact,2548,2020-08-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,2545,2020-08-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,2545,2020-08-01,False,raw_volume
+in_strength,ok,,,0.001,exact,2545,2020-08-01,False,raw_volume
+out_strength,ok,,,0.001,exact,2545,2020-08-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",2545,2020-08-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2545,2020-08-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2545,2020-08-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,1024,2020-08-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,1024,2020-08-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on projection LCC,2535,2020-08-01,False,raw_volume
+betweenness,ok,,,0.246,exact,2545,2020-08-01,False,raw_volume
+harmonic_in,ok,,,0.36,exact,2545,2020-08-01,False,raw_volume
+harmonic_out,ok,,,0.36,exact,2545,2020-08-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,2545,2020-08-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,2545,2020-08-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,2545,2020-08-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,2545,2020-08-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",2545,2020-08-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2545,2020-08-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2545,2020-08-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,1024,2020-08-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,1024,2020-08-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,2535,2020-08-01,False,log1p_volume
+betweenness,ok,,,0.263,exact,2545,2020-08-01,False,log1p_volume
+harmonic_in,ok,,,0.373,exact,2545,2020-08-01,False,log1p_volume
+harmonic_out,ok,,,0.373,exact,2545,2020-08-01,False,log1p_volume
+in_degree_centrality,ok,,,0.002,exact,8999,2020-09-01,False,frequency
+out_degree_centrality,ok,,,0.002,exact,8999,2020-09-01,False,frequency
+in_strength,ok,,,0.002,exact,8999,2020-09-01,False,frequency
+out_strength,ok,,,0.002,exact,8999,2020-09-01,False,frequency
+pagerank,ok,,,0.002,"exact, damping=0.85",8999,2020-09-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8999,2020-09-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8999,2020-09-01,False,frequency
+eigenvector_in_lscc,ok,,,0.011,exact on LSCC,3356,2020-09-01,False,frequency
+eigenvector_out_lscc,ok,,,0.011,exact on LSCC,3356,2020-09-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.009,exact on projection LCC,8954,2020-09-01,False,frequency
+betweenness,ok,,,0.966,"source sampling, k=3000, rescaled n/k",3000,2020-09-01,False,frequency
+harmonic_in,ok,,,4.486,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8874,2020-09-01,False,frequency
+harmonic_out,ok,,,4.486,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8874,2020-09-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,8997,2020-09-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,8997,2020-09-01,False,raw_volume
+in_strength,ok,,,0.001,exact,8997,2020-09-01,False,raw_volume
+out_strength,ok,,,0.001,exact,8997,2020-09-01,False,raw_volume
+pagerank,ok,,,0.003,"exact, damping=0.85",8997,2020-09-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8997,2020-09-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8997,2020-09-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.01,exact on LSCC,3355,2020-09-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.01,exact on LSCC,3355,2020-09-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.008,exact on projection LCC,8952,2020-09-01,False,raw_volume
+betweenness,ok,,,1.184,"source sampling, k=3000, rescaled n/k",3000,2020-09-01,False,raw_volume
+harmonic_in,ok,,,5.813,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8997,2020-09-01,False,raw_volume
+harmonic_out,ok,,,5.813,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8997,2020-09-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,8997,2020-09-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,8997,2020-09-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,8997,2020-09-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,8997,2020-09-01,False,log1p_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",8997,2020-09-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8997,2020-09-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8997,2020-09-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.01,exact on LSCC,3355,2020-09-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.01,exact on LSCC,3355,2020-09-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.008,exact on projection LCC,8952,2020-09-01,False,log1p_volume
+betweenness,ok,,,1.205,"source sampling, k=3000, rescaled n/k",3000,2020-09-01,False,log1p_volume
+harmonic_in,ok,,,6.314,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8997,2020-09-01,False,log1p_volume
+harmonic_out,ok,,,6.314,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8997,2020-09-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,8681,2020-10-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,8681,2020-10-01,False,frequency
+in_strength,ok,,,0.001,exact,8681,2020-10-01,False,frequency
+out_strength,ok,,,0.001,exact,8681,2020-10-01,False,frequency
+pagerank,ok,,,0.003,"exact, damping=0.85",8681,2020-10-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8681,2020-10-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8681,2020-10-01,False,frequency
+eigenvector_in_lscc,ok,,,0.006,exact on LSCC,1784,2020-10-01,False,frequency
+eigenvector_out_lscc,ok,,,0.006,exact on LSCC,1784,2020-10-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.008,exact on projection LCC,8558,2020-10-01,False,frequency
+betweenness,ok,,,0.511,"source sampling, k=3000, rescaled n/k",3000,2020-10-01,False,frequency
+harmonic_in,ok,,,2.264,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8681,2020-10-01,False,frequency
+harmonic_out,ok,,,2.264,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8681,2020-10-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,8674,2020-10-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,8674,2020-10-01,False,raw_volume
+in_strength,ok,,,0.001,exact,8674,2020-10-01,False,raw_volume
+out_strength,ok,,,0.001,exact,8674,2020-10-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",8674,2020-10-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8674,2020-10-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8674,2020-10-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.006,exact on LSCC,1784,2020-10-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.006,exact on LSCC,1784,2020-10-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.008,exact on projection LCC,8555,2020-10-01,False,raw_volume
+betweenness,ok,,,0.628,"source sampling, k=3000, rescaled n/k",3000,2020-10-01,False,raw_volume
+harmonic_in,ok,,,3.069,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8674,2020-10-01,False,raw_volume
+harmonic_out,ok,,,3.069,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8674,2020-10-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,8674,2020-10-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,8674,2020-10-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,8674,2020-10-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,8674,2020-10-01,False,log1p_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",8674,2020-10-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8674,2020-10-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8674,2020-10-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.006,exact on LSCC,1784,2020-10-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.006,exact on LSCC,1784,2020-10-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.009,exact on projection LCC,8555,2020-10-01,False,log1p_volume
+betweenness,ok,,,0.653,"source sampling, k=3000, rescaled n/k",3000,2020-10-01,False,log1p_volume
+harmonic_in,ok,,,3.122,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8674,2020-10-01,False,log1p_volume
+harmonic_out,ok,,,3.122,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8674,2020-10-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,6282,2020-11-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,6282,2020-11-01,False,frequency
+in_strength,ok,,,0.001,exact,6282,2020-11-01,False,frequency
+out_strength,ok,,,0.001,exact,6282,2020-11-01,False,frequency
+pagerank,ok,,,0.001,"exact, damping=0.85",6282,2020-11-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6282,2020-11-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6282,2020-11-01,False,frequency
+eigenvector_in_lscc,ok,,,0.005,exact on LSCC,1106,2020-11-01,False,frequency
+eigenvector_out_lscc,ok,,,0.005,exact on LSCC,1106,2020-11-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.006,exact on projection LCC,6127,2020-11-01,False,frequency
+betweenness,ok,,,0.311,"source sampling, k=3000, rescaled n/k",3000,2020-11-01,False,frequency
+harmonic_in,ok,,,1.102,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6282,2020-11-01,False,frequency
+harmonic_out,ok,,,1.102,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6282,2020-11-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,6281,2020-11-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,6281,2020-11-01,False,raw_volume
+in_strength,ok,,,0.001,exact,6281,2020-11-01,False,raw_volume
+out_strength,ok,,,0.001,exact,6281,2020-11-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",6281,2020-11-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.013,exact,6281,2020-11-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.013,exact,6281,2020-11-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,1106,2020-11-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,1106,2020-11-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.006,exact on projection LCC,6126,2020-11-01,False,raw_volume
+betweenness,ok,,,0.37,"source sampling, k=3000, rescaled n/k",3000,2020-11-01,False,raw_volume
+harmonic_in,ok,,,1.269,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6281,2020-11-01,False,raw_volume
+harmonic_out,ok,,,1.269,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6281,2020-11-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,6281,2020-11-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,6281,2020-11-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,6281,2020-11-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,6281,2020-11-01,False,log1p_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",6281,2020-11-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6281,2020-11-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6281,2020-11-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1106,2020-11-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1106,2020-11-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.006,exact on projection LCC,6126,2020-11-01,False,log1p_volume
+betweenness,ok,,,0.364,"source sampling, k=3000, rescaled n/k",3000,2020-11-01,False,log1p_volume
+harmonic_in,ok,,,1.393,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6281,2020-11-01,False,log1p_volume
+harmonic_out,ok,,,1.393,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6281,2020-11-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,6539,2020-12-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,6539,2020-12-01,False,frequency
+in_strength,ok,,,0.001,exact,6539,2020-12-01,False,frequency
+out_strength,ok,,,0.001,exact,6539,2020-12-01,False,frequency
+pagerank,ok,,,0.003,"exact, damping=0.85",6539,2020-12-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6539,2020-12-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6539,2020-12-01,False,frequency
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1063,2020-12-01,False,frequency
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1063,2020-12-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.006,exact on projection LCC,6364,2020-12-01,False,frequency
+betweenness,ok,,,0.291,"source sampling, k=3000, rescaled n/k",3000,2020-12-01,False,frequency
+harmonic_in,ok,,,1.037,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6539,2020-12-01,False,frequency
+harmonic_out,ok,,,1.037,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6539,2020-12-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,6527,2020-12-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,6527,2020-12-01,False,raw_volume
+in_strength,ok,,,0.001,exact,6527,2020-12-01,False,raw_volume
+out_strength,ok,,,0.001,exact,6527,2020-12-01,False,raw_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",6527,2020-12-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6527,2020-12-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,6527,2020-12-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1062,2020-12-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1062,2020-12-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.006,exact on projection LCC,6356,2020-12-01,False,raw_volume
+betweenness,ok,,,0.314,"source sampling, k=3000, rescaled n/k",3000,2020-12-01,False,raw_volume
+harmonic_in,ok,,,1.209,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6527,2020-12-01,False,raw_volume
+harmonic_out,ok,,,1.209,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6527,2020-12-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,6527,2020-12-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,6527,2020-12-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,6527,2020-12-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,6527,2020-12-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",6527,2020-12-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.012,exact,6527,2020-12-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.012,exact,6527,2020-12-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,1062,2020-12-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,1062,2020-12-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.006,exact on projection LCC,6356,2020-12-01,False,log1p_volume
+betweenness,ok,,,0.322,"source sampling, k=3000, rescaled n/k",3000,2020-12-01,False,log1p_volume
+harmonic_in,ok,,,1.202,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6527,2020-12-01,False,log1p_volume
+harmonic_out,ok,,,1.202,candidate set: top 3000 by degree/strength/PageRank + 3000 random,6527,2020-12-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,5301,2021-01-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,5301,2021-01-01,False,frequency
+in_strength,ok,,,0.001,exact,5301,2021-01-01,False,frequency
+out_strength,ok,,,0.001,exact,5301,2021-01-01,False,frequency
+pagerank,ok,,,0.001,"exact, damping=0.85",5301,2021-01-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5301,2021-01-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5301,2021-01-01,False,frequency
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1251,2021-01-01,False,frequency
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1251,2021-01-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.005,exact on projection LCC,5110,2021-01-01,False,frequency
+betweenness,ok,,,0.373,"source sampling, k=3000, rescaled n/k",3000,2021-01-01,False,frequency
+harmonic_in,ok,,,1.017,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5301,2021-01-01,False,frequency
+harmonic_out,ok,,,1.017,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5301,2021-01-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,5296,2021-01-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,5296,2021-01-01,False,raw_volume
+in_strength,ok,,,0.001,exact,5296,2021-01-01,False,raw_volume
+out_strength,ok,,,0.001,exact,5296,2021-01-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",5296,2021-01-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5296,2021-01-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5296,2021-01-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1251,2021-01-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1251,2021-01-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on projection LCC,5107,2021-01-01,False,raw_volume
+betweenness,ok,,,0.441,"source sampling, k=3000, rescaled n/k",3000,2021-01-01,False,raw_volume
+harmonic_in,ok,,,1.221,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5296,2021-01-01,False,raw_volume
+harmonic_out,ok,,,1.221,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5296,2021-01-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,5296,2021-01-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,5296,2021-01-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,5296,2021-01-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,5296,2021-01-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",5296,2021-01-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5296,2021-01-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5296,2021-01-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1251,2021-01-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1251,2021-01-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.004,exact on projection LCC,5107,2021-01-01,False,log1p_volume
+betweenness,ok,,,0.446,"source sampling, k=3000, rescaled n/k",3000,2021-01-01,False,log1p_volume
+harmonic_in,ok,,,1.245,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5296,2021-01-01,False,log1p_volume
+harmonic_out,ok,,,1.246,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5296,2021-01-01,False,log1p_volume
+in_degree_centrality,ok,,,0.002,exact,11265,2021-02-01,False,frequency
+out_degree_centrality,ok,,,0.002,exact,11265,2021-02-01,False,frequency
+in_strength,ok,,,0.002,exact,11265,2021-02-01,False,frequency
+out_strength,ok,,,0.002,exact,11265,2021-02-01,False,frequency
+pagerank,ok,,,0.002,"exact, damping=0.85",11265,2021-02-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.02,exact,11265,2021-02-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.02,exact,11265,2021-02-01,False,frequency
+eigenvector_in_lscc,ok,,,0.007,exact on LSCC,2330,2021-02-01,False,frequency
+eigenvector_out_lscc,ok,,,0.007,exact on LSCC,2330,2021-02-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.012,exact on projection LCC,10762,2021-02-01,False,frequency
+betweenness,ok,,,0.809,"source sampling, k=3000, rescaled n/k",3000,2021-02-01,False,frequency
+harmonic_in,ok,,,3.945,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9362,2021-02-01,False,frequency
+harmonic_out,ok,,,3.945,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9362,2021-02-01,False,frequency
+in_degree_centrality,ok,,,0.002,exact,11260,2021-02-01,False,raw_volume
+out_degree_centrality,ok,,,0.002,exact,11260,2021-02-01,False,raw_volume
+in_strength,ok,,,0.002,exact,11260,2021-02-01,False,raw_volume
+out_strength,ok,,,0.002,exact,11260,2021-02-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",11260,2021-02-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.021,exact,11260,2021-02-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.021,exact,11260,2021-02-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.008,exact on LSCC,2330,2021-02-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.008,exact on LSCC,2330,2021-02-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.01,exact on projection LCC,10761,2021-02-01,False,raw_volume
+betweenness,ok,,,1.03,"source sampling, k=3000, rescaled n/k",3000,2021-02-01,False,raw_volume
+harmonic_in,ok,,,5.562,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9945,2021-02-01,False,raw_volume
+harmonic_out,ok,,,5.562,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9945,2021-02-01,False,raw_volume
+in_degree_centrality,ok,,,0.002,exact,11260,2021-02-01,False,log1p_volume
+out_degree_centrality,ok,,,0.002,exact,11260,2021-02-01,False,log1p_volume
+in_strength,ok,,,0.002,exact,11260,2021-02-01,False,log1p_volume
+out_strength,ok,,,0.002,exact,11260,2021-02-01,False,log1p_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",11260,2021-02-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.02,exact,11260,2021-02-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.02,exact,11260,2021-02-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.009,exact on LSCC,2330,2021-02-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.009,exact on LSCC,2330,2021-02-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.011,exact on projection LCC,10761,2021-02-01,False,log1p_volume
+betweenness,ok,,,1.029,"source sampling, k=3000, rescaled n/k",3000,2021-02-01,False,log1p_volume
+harmonic_in,ok,,,5.47,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9860,2021-02-01,False,log1p_volume
+harmonic_out,ok,,,5.47,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9860,2021-02-01,False,log1p_volume
+in_degree_centrality,ok,,,0.003,exact,16229,2021-03-01,False,frequency
+out_degree_centrality,ok,,,0.003,exact,16229,2021-03-01,False,frequency
+in_strength,ok,,,0.003,exact,16229,2021-03-01,False,frequency
+out_strength,ok,,,0.003,exact,16229,2021-03-01,False,frequency
+pagerank,ok,,,0.003,"exact, damping=0.85",16229,2021-03-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.031,exact,16229,2021-03-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.031,exact,16229,2021-03-01,False,frequency
+eigenvector_in_lscc,ok,,,0.009,exact on LSCC,2744,2021-03-01,False,frequency
+eigenvector_out_lscc,ok,,,0.009,exact on LSCC,2744,2021-03-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.017,exact on projection LCC,15665,2021-03-01,False,frequency
+betweenness,ok,,,1.102,"source sampling, k=3000, rescaled n/k",3000,2021-03-01,False,frequency
+harmonic_in,ok,,,6.518,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10319,2021-03-01,False,frequency
+harmonic_out,ok,,,6.518,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10319,2021-03-01,False,frequency
+in_degree_centrality,ok,,,0.002,exact,16220,2021-03-01,False,raw_volume
+out_degree_centrality,ok,,,0.002,exact,16220,2021-03-01,False,raw_volume
+in_strength,ok,,,0.002,exact,16220,2021-03-01,False,raw_volume
+out_strength,ok,,,0.002,exact,16220,2021-03-01,False,raw_volume
+pagerank,ok,,,0.003,"exact, damping=0.85",16220,2021-03-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.03,exact,16220,2021-03-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.03,exact,16220,2021-03-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.009,exact on LSCC,2742,2021-03-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.009,exact on LSCC,2742,2021-03-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.015,exact on projection LCC,15659,2021-03-01,False,raw_volume
+betweenness,ok,,,1.341,"source sampling, k=3000, rescaled n/k",3000,2021-03-01,False,raw_volume
+harmonic_in,ok,,,8.298,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10622,2021-03-01,False,raw_volume
+harmonic_out,ok,,,8.298,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10622,2021-03-01,False,raw_volume
+in_degree_centrality,ok,,,0.002,exact,16220,2021-03-01,False,log1p_volume
+out_degree_centrality,ok,,,0.002,exact,16220,2021-03-01,False,log1p_volume
+in_strength,ok,,,0.002,exact,16220,2021-03-01,False,log1p_volume
+out_strength,ok,,,0.002,exact,16220,2021-03-01,False,log1p_volume
+pagerank,ok,,,0.003,"exact, damping=0.85",16220,2021-03-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.03,exact,16220,2021-03-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.03,exact,16220,2021-03-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.009,exact on LSCC,2742,2021-03-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.009,exact on LSCC,2742,2021-03-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.014,exact on projection LCC,15659,2021-03-01,False,log1p_volume
+betweenness,ok,,,1.477,"source sampling, k=3000, rescaled n/k",3000,2021-03-01,False,log1p_volume
+harmonic_in,ok,,,8.069,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10264,2021-03-01,False,log1p_volume
+harmonic_out,ok,,,8.069,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10264,2021-03-01,False,log1p_volume
+in_degree_centrality,ok,,,0.002,exact,12936,2021-04-01,False,frequency
+out_degree_centrality,ok,,,0.002,exact,12936,2021-04-01,False,frequency
+in_strength,ok,,,0.002,exact,12936,2021-04-01,False,frequency
+out_strength,ok,,,0.002,exact,12936,2021-04-01,False,frequency
+pagerank,ok,,,0.002,"exact, damping=0.85",12936,2021-04-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.023,exact,12936,2021-04-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.023,exact,12936,2021-04-01,False,frequency
+eigenvector_in_lscc,ok,,,0.006,exact on LSCC,1844,2021-04-01,False,frequency
+eigenvector_out_lscc,ok,,,0.006,exact on LSCC,1844,2021-04-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.013,exact on projection LCC,12357,2021-04-01,False,frequency
+betweenness,ok,,,0.683,"source sampling, k=3000, rescaled n/k",3000,2021-04-01,False,frequency
+harmonic_in,ok,,,3.941,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10002,2021-04-01,False,frequency
+harmonic_out,ok,,,3.941,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10002,2021-04-01,False,frequency
+in_degree_centrality,ok,,,0.002,exact,12920,2021-04-01,False,raw_volume
+out_degree_centrality,ok,,,0.002,exact,12920,2021-04-01,False,raw_volume
+in_strength,ok,,,0.002,exact,12920,2021-04-01,False,raw_volume
+out_strength,ok,,,0.002,exact,12920,2021-04-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",12920,2021-04-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.025,exact,12920,2021-04-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.025,exact,12920,2021-04-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.006,exact on LSCC,1844,2021-04-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.006,exact on LSCC,1844,2021-04-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.012,exact on projection LCC,12345,2021-04-01,False,raw_volume
+betweenness,ok,,,0.84,"source sampling, k=3000, rescaled n/k",3000,2021-04-01,False,raw_volume
+harmonic_in,ok,,,4.957,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10275,2021-04-01,False,raw_volume
+harmonic_out,ok,,,4.957,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10275,2021-04-01,False,raw_volume
+in_degree_centrality,ok,,,0.002,exact,12920,2021-04-01,False,log1p_volume
+out_degree_centrality,ok,,,0.002,exact,12920,2021-04-01,False,log1p_volume
+in_strength,ok,,,0.002,exact,12920,2021-04-01,False,log1p_volume
+out_strength,ok,,,0.002,exact,12920,2021-04-01,False,log1p_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",12920,2021-04-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.026,exact,12920,2021-04-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.026,exact,12920,2021-04-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.006,exact on LSCC,1844,2021-04-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.006,exact on LSCC,1844,2021-04-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.011,exact on projection LCC,12345,2021-04-01,False,log1p_volume
+betweenness,ok,,,0.826,"source sampling, k=3000, rescaled n/k",3000,2021-04-01,False,log1p_volume
+harmonic_in,ok,,,5.124,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10258,2021-04-01,False,log1p_volume
+harmonic_out,ok,,,5.124,candidate set: top 3000 by degree/strength/PageRank + 3000 random,10258,2021-04-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,9207,2021-05-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,9207,2021-05-01,False,frequency
+in_strength,ok,,,0.001,exact,9207,2021-05-01,False,frequency
+out_strength,ok,,,0.001,exact,9207,2021-05-01,False,frequency
+pagerank,ok,,,0.002,"exact, damping=0.85",9207,2021-05-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.017,exact,9207,2021-05-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.017,exact,9207,2021-05-01,False,frequency
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1030,2021-05-01,False,frequency
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1030,2021-05-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.009,exact on projection LCC,8774,2021-05-01,False,frequency
+betweenness,ok,,,0.435,"source sampling, k=3000, rescaled n/k",3000,2021-05-01,False,frequency
+harmonic_in,ok,,,2.065,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9175,2021-05-01,False,frequency
+harmonic_out,ok,,,2.065,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9175,2021-05-01,False,frequency
+in_degree_centrality,ok,,,0.002,exact,9199,2021-05-01,False,raw_volume
+out_degree_centrality,ok,,,0.002,exact,9199,2021-05-01,False,raw_volume
+in_strength,ok,,,0.002,exact,9199,2021-05-01,False,raw_volume
+out_strength,ok,,,0.002,exact,9199,2021-05-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",9199,2021-05-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.019,exact,9199,2021-05-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.019,exact,9199,2021-05-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,1030,2021-05-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,1030,2021-05-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.008,exact on projection LCC,8770,2021-05-01,False,raw_volume
+betweenness,ok,,,0.453,"source sampling, k=3000, rescaled n/k",3000,2021-05-01,False,raw_volume
+harmonic_in,ok,,,2.15,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9199,2021-05-01,False,raw_volume
+harmonic_out,ok,,,2.15,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9199,2021-05-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,9199,2021-05-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,9199,2021-05-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,9199,2021-05-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,9199,2021-05-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",9199,2021-05-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,9199,2021-05-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,9199,2021-05-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,1030,2021-05-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,1030,2021-05-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.011,exact on projection LCC,8770,2021-05-01,False,log1p_volume
+betweenness,ok,,,0.44,"source sampling, k=3000, rescaled n/k",3000,2021-05-01,False,log1p_volume
+harmonic_in,ok,,,2.227,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9199,2021-05-01,False,log1p_volume
+harmonic_out,ok,,,2.227,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9199,2021-05-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,8784,2021-06-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,8784,2021-06-01,False,frequency
+in_strength,ok,,,0.001,exact,8784,2021-06-01,False,frequency
+out_strength,ok,,,0.001,exact,8784,2021-06-01,False,frequency
+pagerank,ok,,,0.003,"exact, damping=0.85",8784,2021-06-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.017,exact,8784,2021-06-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.017,exact,8784,2021-06-01,False,frequency
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,877,2021-06-01,False,frequency
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,877,2021-06-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.009,exact on projection LCC,8515,2021-06-01,False,frequency
+betweenness,ok,,,0.338,"source sampling, k=3000, rescaled n/k",3000,2021-06-01,False,frequency
+harmonic_in,ok,,,1.529,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8784,2021-06-01,False,frequency
+harmonic_out,ok,,,1.529,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8784,2021-06-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,8776,2021-06-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,8776,2021-06-01,False,raw_volume
+in_strength,ok,,,0.001,exact,8776,2021-06-01,False,raw_volume
+out_strength,ok,,,0.001,exact,8776,2021-06-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",8776,2021-06-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.018,exact,8776,2021-06-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.018,exact,8776,2021-06-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on LSCC,877,2021-06-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on LSCC,877,2021-06-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.009,exact on projection LCC,8513,2021-06-01,False,raw_volume
+betweenness,ok,,,0.341,"source sampling, k=3000, rescaled n/k",3000,2021-06-01,False,raw_volume
+harmonic_in,ok,,,1.607,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8776,2021-06-01,False,raw_volume
+harmonic_out,ok,,,1.607,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8776,2021-06-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,8776,2021-06-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,8776,2021-06-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,8776,2021-06-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,8776,2021-06-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",8776,2021-06-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8776,2021-06-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8776,2021-06-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,877,2021-06-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,877,2021-06-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.012,exact on projection LCC,8513,2021-06-01,False,log1p_volume
+betweenness,ok,,,0.339,"source sampling, k=3000, rescaled n/k",3000,2021-06-01,False,log1p_volume
+harmonic_in,ok,,,1.612,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8776,2021-06-01,False,log1p_volume
+harmonic_out,ok,,,1.612,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8776,2021-06-01,False,log1p_volume
+in_degree_centrality,ok,,,0.002,exact,8610,2021-07-01,False,frequency
+out_degree_centrality,ok,,,0.002,exact,8610,2021-07-01,False,frequency
+in_strength,ok,,,0.002,exact,8610,2021-07-01,False,frequency
+out_strength,ok,,,0.002,exact,8610,2021-07-01,False,frequency
+pagerank,ok,,,0.002,"exact, damping=0.85",8610,2021-07-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8610,2021-07-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8610,2021-07-01,False,frequency
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on LSCC,772,2021-07-01,False,frequency
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on LSCC,772,2021-07-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.008,exact on projection LCC,8378,2021-07-01,False,frequency
+betweenness,ok,,,0.357,"source sampling, k=3000, rescaled n/k",3000,2021-07-01,False,frequency
+harmonic_in,ok,,,1.575,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8610,2021-07-01,False,frequency
+harmonic_out,ok,,,1.575,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8610,2021-07-01,False,frequency
+in_degree_centrality,ok,,,0.002,exact,8596,2021-07-01,False,raw_volume
+out_degree_centrality,ok,,,0.002,exact,8596,2021-07-01,False,raw_volume
+in_strength,ok,,,0.002,exact,8596,2021-07-01,False,raw_volume
+out_strength,ok,,,0.002,exact,8596,2021-07-01,False,raw_volume
+pagerank,ok,,,0.003,"exact, damping=0.85",8596,2021-07-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8596,2021-07-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.016,exact,8596,2021-07-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on LSCC,772,2021-07-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on LSCC,772,2021-07-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.009,exact on projection LCC,8372,2021-07-01,False,raw_volume
+betweenness,ok,,,0.346,"source sampling, k=3000, rescaled n/k",3000,2021-07-01,False,raw_volume
+harmonic_in,ok,,,1.679,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8596,2021-07-01,False,raw_volume
+harmonic_out,ok,,,1.679,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8596,2021-07-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,8596,2021-07-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,8596,2021-07-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,8596,2021-07-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,8596,2021-07-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",8596,2021-07-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8596,2021-07-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.015,exact,8596,2021-07-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,772,2021-07-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,772,2021-07-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.013,exact on projection LCC,8372,2021-07-01,False,log1p_volume
+betweenness,ok,,,0.352,"source sampling, k=3000, rescaled n/k",3000,2021-07-01,False,log1p_volume
+harmonic_in,ok,,,1.669,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8596,2021-07-01,False,log1p_volume
+harmonic_out,ok,,,1.669,candidate set: top 3000 by degree/strength/PageRank + 3000 random,8596,2021-07-01,False,log1p_volume
+in_degree_centrality,ok,,,0.002,exact,9661,2021-08-01,False,frequency
+out_degree_centrality,ok,,,0.002,exact,9661,2021-08-01,False,frequency
+in_strength,ok,,,0.002,exact,9661,2021-08-01,False,frequency
+out_strength,ok,,,0.002,exact,9661,2021-08-01,False,frequency
+pagerank,ok,,,0.002,"exact, damping=0.85",9661,2021-08-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.021,exact,9661,2021-08-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.021,exact,9661,2021-08-01,False,frequency
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on LSCC,1238,2021-08-01,False,frequency
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on LSCC,1238,2021-08-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.009,exact on projection LCC,9220,2021-08-01,False,frequency
+betweenness,ok,,,0.502,"source sampling, k=3000, rescaled n/k",3000,2021-08-01,False,frequency
+harmonic_in,ok,,,2.484,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9134,2021-08-01,False,frequency
+harmonic_out,ok,,,2.484,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9134,2021-08-01,False,frequency
+in_degree_centrality,ok,,,0.002,exact,9656,2021-08-01,False,raw_volume
+out_degree_centrality,ok,,,0.002,exact,9656,2021-08-01,False,raw_volume
+in_strength,ok,,,0.002,exact,9656,2021-08-01,False,raw_volume
+out_strength,ok,,,0.002,exact,9656,2021-08-01,False,raw_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",9656,2021-08-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.017,exact,9656,2021-08-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.017,exact,9656,2021-08-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on LSCC,1238,2021-08-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on LSCC,1238,2021-08-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.01,exact on projection LCC,9217,2021-08-01,False,raw_volume
+betweenness,ok,,,0.524,"source sampling, k=3000, rescaled n/k",3000,2021-08-01,False,raw_volume
+harmonic_in,ok,,,2.59,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9656,2021-08-01,False,raw_volume
+harmonic_out,ok,,,2.59,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9656,2021-08-01,False,raw_volume
+in_degree_centrality,ok,,,0.002,exact,9656,2021-08-01,False,log1p_volume
+out_degree_centrality,ok,,,0.002,exact,9656,2021-08-01,False,log1p_volume
+in_strength,ok,,,0.002,exact,9656,2021-08-01,False,log1p_volume
+out_strength,ok,,,0.002,exact,9656,2021-08-01,False,log1p_volume
+pagerank,ok,,,0.002,"exact, damping=0.85",9656,2021-08-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.018,exact,9656,2021-08-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.018,exact,9656,2021-08-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.005,exact on LSCC,1238,2021-08-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.005,exact on LSCC,1238,2021-08-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.013,exact on projection LCC,9217,2021-08-01,False,log1p_volume
+betweenness,ok,,,0.52,"source sampling, k=3000, rescaled n/k",3000,2021-08-01,False,log1p_volume
+harmonic_in,ok,,,2.663,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9633,2021-08-01,False,log1p_volume
+harmonic_out,ok,,,2.663,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9633,2021-08-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,5497,2021-09-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,5497,2021-09-01,False,frequency
+in_strength,ok,,,0.001,exact,5497,2021-09-01,False,frequency
+out_strength,ok,,,0.001,exact,5497,2021-09-01,False,frequency
+pagerank,ok,,,0.015,"exact, damping=0.85",5497,2021-09-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.02,exact,5497,2021-09-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.02,exact,5497,2021-09-01,False,frequency
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on LSCC,606,2021-09-01,False,frequency
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on LSCC,606,2021-09-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on projection LCC,5121,2021-09-01,False,frequency
+betweenness,ok,,,0.214,"source sampling, k=3000, rescaled n/k",3000,2021-09-01,False,frequency
+harmonic_in,ok,,,0.602,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5497,2021-09-01,False,frequency
+harmonic_out,ok,,,0.602,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5497,2021-09-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,5497,2021-09-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,5497,2021-09-01,False,raw_volume
+in_strength,ok,,,0.001,exact,5497,2021-09-01,False,raw_volume
+out_strength,ok,,,0.001,exact,5497,2021-09-01,False,raw_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",5497,2021-09-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5497,2021-09-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5497,2021-09-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on LSCC,606,2021-09-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on LSCC,606,2021-09-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on projection LCC,5121,2021-09-01,False,raw_volume
+betweenness,ok,,,0.207,"source sampling, k=3000, rescaled n/k",3000,2021-09-01,False,raw_volume
+harmonic_in,ok,,,0.627,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5497,2021-09-01,False,raw_volume
+harmonic_out,ok,,,0.627,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5497,2021-09-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,5497,2021-09-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,5497,2021-09-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,5497,2021-09-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,5497,2021-09-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",5497,2021-09-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5497,2021-09-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,5497,2021-09-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,606,2021-09-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,606,2021-09-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.007,exact on projection LCC,5121,2021-09-01,False,log1p_volume
+betweenness,ok,,,0.213,"source sampling, k=3000, rescaled n/k",3000,2021-09-01,False,log1p_volume
+harmonic_in,ok,,,0.644,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5497,2021-09-01,False,log1p_volume
+harmonic_out,ok,,,0.644,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5497,2021-09-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,5918,2021-10-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,5918,2021-10-01,False,frequency
+in_strength,ok,,,0.001,exact,5918,2021-10-01,False,frequency
+out_strength,ok,,,0.001,exact,5918,2021-10-01,False,frequency
+pagerank,ok,,,0.002,"exact, damping=0.85",5918,2021-10-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.01,exact,5918,2021-10-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.01,exact,5918,2021-10-01,False,frequency
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on LSCC,1332,2021-10-01,False,frequency
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on LSCC,1332,2021-10-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.006,exact on projection LCC,5588,2021-10-01,False,frequency
+betweenness,ok,,,0.384,"source sampling, k=3000, rescaled n/k",3000,2021-10-01,False,frequency
+harmonic_in,ok,,,1.151,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5918,2021-10-01,False,frequency
+harmonic_out,ok,,,1.151,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5918,2021-10-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,5913,2021-10-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,5913,2021-10-01,False,raw_volume
+in_strength,ok,,,0.001,exact,5913,2021-10-01,False,raw_volume
+out_strength,ok,,,0.001,exact,5913,2021-10-01,False,raw_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",5913,2021-10-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.01,exact,5913,2021-10-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.01,exact,5913,2021-10-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,1332,2021-10-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on LSCC,1332,2021-10-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on projection LCC,5585,2021-10-01,False,raw_volume
+betweenness,ok,,,0.368,"source sampling, k=3000, rescaled n/k",3000,2021-10-01,False,raw_volume
+harmonic_in,ok,,,1.166,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5913,2021-10-01,False,raw_volume
+harmonic_out,ok,,,1.166,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5913,2021-10-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,5913,2021-10-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,5913,2021-10-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,5913,2021-10-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,5913,2021-10-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",5913,2021-10-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,5913,2021-10-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.011,exact,5913,2021-10-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.004,exact on LSCC,1332,2021-10-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.004,exact on LSCC,1332,2021-10-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.007,exact on projection LCC,5585,2021-10-01,False,log1p_volume
+betweenness,ok,,,0.369,"source sampling, k=3000, rescaled n/k",3000,2021-10-01,False,log1p_volume
+harmonic_in,ok,,,1.167,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5913,2021-10-01,False,log1p_volume
+harmonic_out,ok,,,1.167,candidate set: top 3000 by degree/strength/PageRank + 3000 random,5913,2021-10-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,4351,2021-11-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,4351,2021-11-01,False,frequency
+in_strength,ok,,,0.001,exact,4351,2021-11-01,False,frequency
+out_strength,ok,,,0.001,exact,4351,2021-11-01,False,frequency
+pagerank,ok,,,0.001,"exact, damping=0.85",4351,2021-11-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.007,exact,4351,2021-11-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.007,exact,4351,2021-11-01,False,frequency
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,529,2021-11-01,False,frequency
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,529,2021-11-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.004,exact on projection LCC,4002,2021-11-01,False,frequency
+betweenness,ok,,,0.266,exact,4351,2021-11-01,False,frequency
+harmonic_in,ok,,,0.422,exact,4351,2021-11-01,False,frequency
+harmonic_out,ok,,,0.422,exact,4351,2021-11-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,4349,2021-11-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,4349,2021-11-01,False,raw_volume
+in_strength,ok,,,0.001,exact,4349,2021-11-01,False,raw_volume
+out_strength,ok,,,0.001,exact,4349,2021-11-01,False,raw_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",4349,2021-11-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.007,exact,4349,2021-11-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.007,exact,4349,2021-11-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,529,2021-11-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,529,2021-11-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.005,exact on projection LCC,4000,2021-11-01,False,raw_volume
+betweenness,ok,,,0.251,exact,4349,2021-11-01,False,raw_volume
+harmonic_in,ok,,,0.44,exact,4349,2021-11-01,False,raw_volume
+harmonic_out,ok,,,0.44,exact,4349,2021-11-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,4349,2021-11-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,4349,2021-11-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,4349,2021-11-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,4349,2021-11-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",4349,2021-11-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,4349,2021-11-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.009,exact,4349,2021-11-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,529,2021-11-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,529,2021-11-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.005,exact on projection LCC,4000,2021-11-01,False,log1p_volume
+betweenness,ok,,,0.25,exact,4349,2021-11-01,False,log1p_volume
+harmonic_in,ok,,,0.418,exact,4349,2021-11-01,False,log1p_volume
+harmonic_out,ok,,,0.418,exact,4349,2021-11-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,4176,2021-12-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,4176,2021-12-01,False,frequency
+in_strength,ok,,,0.001,exact,4176,2021-12-01,False,frequency
+out_strength,ok,,,0.001,exact,4176,2021-12-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",4176,2021-12-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,4176,2021-12-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,4176,2021-12-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,332,2021-12-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,332,2021-12-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on projection LCC,3906,2021-12-01,False,frequency
+betweenness,ok,,,0.136,exact,4176,2021-12-01,False,frequency
+harmonic_in,ok,,,0.25,exact,4176,2021-12-01,False,frequency
+harmonic_out,ok,,,0.25,exact,4176,2021-12-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,4174,2021-12-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,4174,2021-12-01,False,raw_volume
+in_strength,ok,,,0.001,exact,4174,2021-12-01,False,raw_volume
+out_strength,ok,,,0.001,exact,4174,2021-12-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",4174,2021-12-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,4174,2021-12-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,4174,2021-12-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,332,2021-12-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,332,2021-12-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on projection LCC,3906,2021-12-01,False,raw_volume
+betweenness,ok,,,0.143,exact,4174,2021-12-01,False,raw_volume
+harmonic_in,ok,,,0.258,exact,4174,2021-12-01,False,raw_volume
+harmonic_out,ok,,,0.258,exact,4174,2021-12-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,4174,2021-12-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,4174,2021-12-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,4174,2021-12-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,4174,2021-12-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",4174,2021-12-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,4174,2021-12-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,4174,2021-12-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,332,2021-12-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,332,2021-12-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.004,exact on projection LCC,3906,2021-12-01,False,log1p_volume
+betweenness,ok,,,0.143,exact,4174,2021-12-01,False,log1p_volume
+harmonic_in,ok,,,0.256,exact,4174,2021-12-01,False,log1p_volume
+harmonic_out,ok,,,0.256,exact,4174,2021-12-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,3297,2022-01-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,3297,2022-01-01,False,frequency
+in_strength,ok,,,0.001,exact,3297,2022-01-01,False,frequency
+out_strength,ok,,,0.001,exact,3297,2022-01-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",3297,2022-01-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,3297,2022-01-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,3297,2022-01-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,344,2022-01-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,344,2022-01-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,3065,2022-01-01,False,frequency
+betweenness,ok,,,0.105,exact,3297,2022-01-01,False,frequency
+harmonic_in,ok,,,0.182,exact,3297,2022-01-01,False,frequency
+harmonic_out,ok,,,0.182,exact,3297,2022-01-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,3297,2022-01-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,3297,2022-01-01,False,raw_volume
+in_strength,ok,,,0.001,exact,3297,2022-01-01,False,raw_volume
+out_strength,ok,,,0.001,exact,3297,2022-01-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",3297,2022-01-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,3297,2022-01-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.006,exact,3297,2022-01-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,344,2022-01-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,344,2022-01-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on projection LCC,3065,2022-01-01,False,raw_volume
+betweenness,ok,,,0.103,exact,3297,2022-01-01,False,raw_volume
+harmonic_in,ok,,,0.187,exact,3297,2022-01-01,False,raw_volume
+harmonic_out,ok,,,0.187,exact,3297,2022-01-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,3297,2022-01-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,3297,2022-01-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,3297,2022-01-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,3297,2022-01-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",3297,2022-01-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,3297,2022-01-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,3297,2022-01-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,344,2022-01-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,344,2022-01-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.003,exact on projection LCC,3065,2022-01-01,False,log1p_volume
+betweenness,ok,,,0.102,exact,3297,2022-01-01,False,log1p_volume
+harmonic_in,ok,,,0.187,exact,3297,2022-01-01,False,log1p_volume
+harmonic_out,ok,,,0.187,exact,3297,2022-01-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,2818,2022-02-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,2818,2022-02-01,False,frequency
+in_strength,ok,,,0.001,exact,2818,2022-02-01,False,frequency
+out_strength,ok,,,0.001,exact,2818,2022-02-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",2818,2022-02-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2818,2022-02-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2818,2022-02-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,161,2022-02-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,161,2022-02-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,2646,2022-02-01,False,frequency
+betweenness,ok,,,0.035,exact,2818,2022-02-01,False,frequency
+harmonic_in,ok,,,0.06,exact,2818,2022-02-01,False,frequency
+harmonic_out,ok,,,0.06,exact,2818,2022-02-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,2818,2022-02-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,2818,2022-02-01,False,raw_volume
+in_strength,ok,,,0.001,exact,2818,2022-02-01,False,raw_volume
+out_strength,ok,,,0.001,exact,2818,2022-02-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",2818,2022-02-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2818,2022-02-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2818,2022-02-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,161,2022-02-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,161,2022-02-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on projection LCC,2646,2022-02-01,False,raw_volume
+betweenness,ok,,,0.036,exact,2818,2022-02-01,False,raw_volume
+harmonic_in,ok,,,0.068,exact,2818,2022-02-01,False,raw_volume
+harmonic_out,ok,,,0.068,exact,2818,2022-02-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,2818,2022-02-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,2818,2022-02-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,2818,2022-02-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,2818,2022-02-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",2818,2022-02-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2818,2022-02-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.004,exact,2818,2022-02-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,161,2022-02-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,161,2022-02-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.003,exact on projection LCC,2646,2022-02-01,False,log1p_volume
+betweenness,ok,,,0.036,exact,2818,2022-02-01,False,log1p_volume
+harmonic_in,ok,,,0.068,exact,2818,2022-02-01,False,log1p_volume
+harmonic_out,ok,,,0.068,exact,2818,2022-02-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,2108,2022-03-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,2108,2022-03-01,False,frequency
+in_strength,ok,,,0.0,exact,2108,2022-03-01,False,frequency
+out_strength,ok,,,0.0,exact,2108,2022-03-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",2108,2022-03-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,2108,2022-03-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,2108,2022-03-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,282,2022-03-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,282,2022-03-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1905,2022-03-01,False,frequency
+betweenness,ok,,,0.042,exact,2108,2022-03-01,False,frequency
+harmonic_in,ok,,,0.074,exact,2108,2022-03-01,False,frequency
+harmonic_out,ok,,,0.074,exact,2108,2022-03-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,2106,2022-03-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,2106,2022-03-01,False,raw_volume
+in_strength,ok,,,0.0,exact,2106,2022-03-01,False,raw_volume
+out_strength,ok,,,0.0,exact,2106,2022-03-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",2106,2022-03-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,2106,2022-03-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,2106,2022-03-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,282,2022-03-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,282,2022-03-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on projection LCC,1905,2022-03-01,False,raw_volume
+betweenness,ok,,,0.049,exact,2106,2022-03-01,False,raw_volume
+harmonic_in,ok,,,0.078,exact,2106,2022-03-01,False,raw_volume
+harmonic_out,ok,,,0.078,exact,2106,2022-03-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,2106,2022-03-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,2106,2022-03-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,2106,2022-03-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,2106,2022-03-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",2106,2022-03-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,2106,2022-03-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,2106,2022-03-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,282,2022-03-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,282,2022-03-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,1905,2022-03-01,False,log1p_volume
+betweenness,ok,,,0.044,exact,2106,2022-03-01,False,log1p_volume
+harmonic_in,ok,,,0.078,exact,2106,2022-03-01,False,log1p_volume
+harmonic_out,ok,,,0.078,exact,2106,2022-03-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1162,2022-04-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1162,2022-04-01,False,frequency
+in_strength,ok,,,0.0,exact,1162,2022-04-01,False,frequency
+out_strength,ok,,,0.0,exact,1162,2022-04-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1162,2022-04-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1162,2022-04-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1162,2022-04-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,150,2022-04-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,150,2022-04-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,995,2022-04-01,False,frequency
+betweenness,ok,,,0.011,exact,1162,2022-04-01,False,frequency
+harmonic_in,ok,,,0.019,exact,1162,2022-04-01,False,frequency
+harmonic_out,ok,,,0.019,exact,1162,2022-04-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,1162,2022-04-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1162,2022-04-01,False,raw_volume
+in_strength,ok,,,0.0,exact,1162,2022-04-01,False,raw_volume
+out_strength,ok,,,0.0,exact,1162,2022-04-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1162,2022-04-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1162,2022-04-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1162,2022-04-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,150,2022-04-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,150,2022-04-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,995,2022-04-01,False,raw_volume
+betweenness,ok,,,0.012,exact,1162,2022-04-01,False,raw_volume
+harmonic_in,ok,,,0.02,exact,1162,2022-04-01,False,raw_volume
+harmonic_out,ok,,,0.02,exact,1162,2022-04-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1162,2022-04-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1162,2022-04-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1162,2022-04-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1162,2022-04-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1162,2022-04-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1162,2022-04-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1162,2022-04-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,150,2022-04-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,150,2022-04-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,995,2022-04-01,False,log1p_volume
+betweenness,ok,,,0.011,exact,1162,2022-04-01,False,log1p_volume
+harmonic_in,ok,,,0.021,exact,1162,2022-04-01,False,log1p_volume
+harmonic_out,ok,,,0.021,exact,1162,2022-04-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1231,2022-05-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1231,2022-05-01,False,frequency
+in_strength,ok,,,0.0,exact,1231,2022-05-01,False,frequency
+out_strength,ok,,,0.0,exact,1231,2022-05-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1231,2022-05-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1231,2022-05-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1231,2022-05-01,False,frequency
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,248,2022-05-01,False,frequency
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,248,2022-05-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1099,2022-05-01,False,frequency
+betweenness,ok,,,0.019,exact,1231,2022-05-01,False,frequency
+harmonic_in,ok,,,0.031,exact,1231,2022-05-01,False,frequency
+harmonic_out,ok,,,0.031,exact,1231,2022-05-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,1231,2022-05-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1231,2022-05-01,False,raw_volume
+in_strength,ok,,,0.0,exact,1231,2022-05-01,False,raw_volume
+out_strength,ok,,,0.0,exact,1231,2022-05-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1231,2022-05-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1231,2022-05-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1231,2022-05-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,248,2022-05-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,248,2022-05-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,1099,2022-05-01,False,raw_volume
+betweenness,ok,,,0.02,exact,1231,2022-05-01,False,raw_volume
+harmonic_in,ok,,,0.034,exact,1231,2022-05-01,False,raw_volume
+harmonic_out,ok,,,0.034,exact,1231,2022-05-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1231,2022-05-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1231,2022-05-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1231,2022-05-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1231,2022-05-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1231,2022-05-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1231,2022-05-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1231,2022-05-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,248,2022-05-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,248,2022-05-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1099,2022-05-01,False,log1p_volume
+betweenness,ok,,,0.021,exact,1231,2022-05-01,False,log1p_volume
+harmonic_in,ok,,,0.034,exact,1231,2022-05-01,False,log1p_volume
+harmonic_out,ok,,,0.034,exact,1231,2022-05-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,914,2022-06-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,914,2022-06-01,False,frequency
+in_strength,ok,,,0.0,exact,914,2022-06-01,False,frequency
+out_strength,ok,,,0.0,exact,914,2022-06-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",914,2022-06-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,914,2022-06-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,914,2022-06-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,200,2022-06-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,200,2022-06-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,812,2022-06-01,False,frequency
+betweenness,ok,,,0.014,exact,914,2022-06-01,False,frequency
+harmonic_in,ok,,,0.023,exact,914,2022-06-01,False,frequency
+harmonic_out,ok,,,0.023,exact,914,2022-06-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,914,2022-06-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,914,2022-06-01,False,raw_volume
+in_strength,ok,,,0.0,exact,914,2022-06-01,False,raw_volume
+out_strength,ok,,,0.0,exact,914,2022-06-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",914,2022-06-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,914,2022-06-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,914,2022-06-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,200,2022-06-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,200,2022-06-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,812,2022-06-01,False,raw_volume
+betweenness,ok,,,0.011,exact,914,2022-06-01,False,raw_volume
+harmonic_in,ok,,,0.019,exact,914,2022-06-01,False,raw_volume
+harmonic_out,ok,,,0.019,exact,914,2022-06-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,914,2022-06-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,914,2022-06-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,914,2022-06-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,914,2022-06-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",914,2022-06-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,914,2022-06-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,914,2022-06-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,200,2022-06-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,200,2022-06-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,812,2022-06-01,False,log1p_volume
+betweenness,ok,,,0.011,exact,914,2022-06-01,False,log1p_volume
+harmonic_in,ok,,,0.019,exact,914,2022-06-01,False,log1p_volume
+harmonic_out,ok,,,0.019,exact,914,2022-06-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1366,2022-07-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1366,2022-07-01,False,frequency
+in_strength,ok,,,0.0,exact,1366,2022-07-01,False,frequency
+out_strength,ok,,,0.0,exact,1366,2022-07-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1366,2022-07-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1366,2022-07-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1366,2022-07-01,False,frequency
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,294,2022-07-01,False,frequency
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,294,2022-07-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,1245,2022-07-01,False,frequency
+betweenness,ok,,,0.031,exact,1366,2022-07-01,False,frequency
+harmonic_in,ok,,,0.047,exact,1366,2022-07-01,False,frequency
+harmonic_out,ok,,,0.047,exact,1366,2022-07-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,1365,2022-07-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1365,2022-07-01,False,raw_volume
+in_strength,ok,,,0.0,exact,1365,2022-07-01,False,raw_volume
+out_strength,ok,,,0.0,exact,1365,2022-07-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1365,2022-07-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1365,2022-07-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1365,2022-07-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,294,2022-07-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,294,2022-07-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,1244,2022-07-01,False,raw_volume
+betweenness,ok,,,0.028,exact,1365,2022-07-01,False,raw_volume
+harmonic_in,ok,,,0.045,exact,1365,2022-07-01,False,raw_volume
+harmonic_out,ok,,,0.045,exact,1365,2022-07-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1365,2022-07-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1365,2022-07-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1365,2022-07-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1365,2022-07-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1365,2022-07-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1365,2022-07-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1365,2022-07-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,294,2022-07-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,294,2022-07-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1244,2022-07-01,False,log1p_volume
+betweenness,ok,,,0.028,exact,1365,2022-07-01,False,log1p_volume
+harmonic_in,ok,,,0.046,exact,1365,2022-07-01,False,log1p_volume
+harmonic_out,ok,,,0.046,exact,1365,2022-07-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1049,2022-08-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1049,2022-08-01,False,frequency
+in_strength,ok,,,0.0,exact,1049,2022-08-01,False,frequency
+out_strength,ok,,,0.0,exact,1049,2022-08-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1049,2022-08-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1049,2022-08-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1049,2022-08-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,173,2022-08-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,173,2022-08-01,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,916,2022-08-01,False,frequency
+betweenness,ok,,,0.011,exact,1049,2022-08-01,False,frequency
+harmonic_in,ok,,,0.022,exact,1049,2022-08-01,False,frequency
+harmonic_out,ok,,,0.022,exact,1049,2022-08-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,1048,2022-08-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1048,2022-08-01,False,raw_volume
+in_strength,ok,,,0.0,exact,1048,2022-08-01,False,raw_volume
+out_strength,ok,,,0.0,exact,1048,2022-08-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1048,2022-08-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1048,2022-08-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1048,2022-08-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,173,2022-08-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,173,2022-08-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,915,2022-08-01,False,raw_volume
+betweenness,ok,,,0.011,exact,1048,2022-08-01,False,raw_volume
+harmonic_in,ok,,,0.02,exact,1048,2022-08-01,False,raw_volume
+harmonic_out,ok,,,0.02,exact,1048,2022-08-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1048,2022-08-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1048,2022-08-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1048,2022-08-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1048,2022-08-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1048,2022-08-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1048,2022-08-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1048,2022-08-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,173,2022-08-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,173,2022-08-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,915,2022-08-01,False,log1p_volume
+betweenness,ok,,,0.011,exact,1048,2022-08-01,False,log1p_volume
+harmonic_in,ok,,,0.021,exact,1048,2022-08-01,False,log1p_volume
+harmonic_out,ok,,,0.021,exact,1048,2022-08-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,930,2022-09-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,930,2022-09-01,False,frequency
+in_strength,ok,,,0.0,exact,930,2022-09-01,False,frequency
+out_strength,ok,,,0.0,exact,930,2022-09-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",930,2022-09-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,930,2022-09-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,930,2022-09-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,155,2022-09-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,155,2022-09-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,842,2022-09-01,False,frequency
+betweenness,ok,,,0.01,exact,930,2022-09-01,False,frequency
+harmonic_in,ok,,,0.015,exact,930,2022-09-01,False,frequency
+harmonic_out,ok,,,0.015,exact,930,2022-09-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,930,2022-09-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,930,2022-09-01,False,raw_volume
+in_strength,ok,,,0.0,exact,930,2022-09-01,False,raw_volume
+out_strength,ok,,,0.0,exact,930,2022-09-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",930,2022-09-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,930,2022-09-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,930,2022-09-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,155,2022-09-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,155,2022-09-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,842,2022-09-01,False,raw_volume
+betweenness,ok,,,0.009,exact,930,2022-09-01,False,raw_volume
+harmonic_in,ok,,,0.015,exact,930,2022-09-01,False,raw_volume
+harmonic_out,ok,,,0.015,exact,930,2022-09-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,930,2022-09-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,930,2022-09-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,930,2022-09-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,930,2022-09-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",930,2022-09-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,930,2022-09-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,930,2022-09-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,155,2022-09-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,155,2022-09-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,842,2022-09-01,False,log1p_volume
+betweenness,ok,,,0.009,exact,930,2022-09-01,False,log1p_volume
+harmonic_in,ok,,,0.015,exact,930,2022-09-01,False,log1p_volume
+harmonic_out,ok,,,0.015,exact,930,2022-09-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1133,2022-10-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1133,2022-10-01,False,frequency
+in_strength,ok,,,0.0,exact,1133,2022-10-01,False,frequency
+out_strength,ok,,,0.0,exact,1133,2022-10-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1133,2022-10-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1133,2022-10-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1133,2022-10-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,188,2022-10-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,188,2022-10-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1016,2022-10-01,False,frequency
+betweenness,ok,,,0.015,exact,1133,2022-10-01,False,frequency
+harmonic_in,ok,,,0.022,exact,1133,2022-10-01,False,frequency
+harmonic_out,ok,,,0.022,exact,1133,2022-10-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,1133,2022-10-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1133,2022-10-01,False,raw_volume
+in_strength,ok,,,0.0,exact,1133,2022-10-01,False,raw_volume
+out_strength,ok,,,0.0,exact,1133,2022-10-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1133,2022-10-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1133,2022-10-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1133,2022-10-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,188,2022-10-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,188,2022-10-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,1016,2022-10-01,False,raw_volume
+betweenness,ok,,,0.015,exact,1133,2022-10-01,False,raw_volume
+harmonic_in,ok,,,0.024,exact,1133,2022-10-01,False,raw_volume
+harmonic_out,ok,,,0.024,exact,1133,2022-10-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1133,2022-10-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1133,2022-10-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1133,2022-10-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1133,2022-10-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1133,2022-10-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1133,2022-10-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1133,2022-10-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,188,2022-10-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,188,2022-10-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1016,2022-10-01,False,log1p_volume
+betweenness,ok,,,0.015,exact,1133,2022-10-01,False,log1p_volume
+harmonic_in,ok,,,0.025,exact,1133,2022-10-01,False,log1p_volume
+harmonic_out,ok,,,0.025,exact,1133,2022-10-01,False,log1p_volume
+in_degree_centrality,ok,,,0.001,exact,2868,2022-11-01,False,frequency
+out_degree_centrality,ok,,,0.001,exact,2868,2022-11-01,False,frequency
+in_strength,ok,,,0.001,exact,2868,2022-11-01,False,frequency
+out_strength,ok,,,0.001,exact,2868,2022-11-01,False,frequency
+pagerank,ok,,,0.001,"exact, damping=0.85",2868,2022-11-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2868,2022-11-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2868,2022-11-01,False,frequency
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,689,2022-11-01,False,frequency
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,689,2022-11-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.003,exact on projection LCC,2662,2022-11-01,False,frequency
+betweenness,ok,,,0.211,exact,2868,2022-11-01,False,frequency
+harmonic_in,ok,,,0.32,exact,2868,2022-11-01,False,frequency
+harmonic_out,ok,,,0.32,exact,2868,2022-11-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,2868,2022-11-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,2868,2022-11-01,False,raw_volume
+in_strength,ok,,,0.001,exact,2868,2022-11-01,False,raw_volume
+out_strength,ok,,,0.001,exact,2868,2022-11-01,False,raw_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",2868,2022-11-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2868,2022-11-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2868,2022-11-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,689,2022-11-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,689,2022-11-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.002,exact on projection LCC,2662,2022-11-01,False,raw_volume
+betweenness,ok,,,0.231,exact,2868,2022-11-01,False,raw_volume
+harmonic_in,ok,,,0.321,exact,2868,2022-11-01,False,raw_volume
+harmonic_out,ok,,,0.321,exact,2868,2022-11-01,False,raw_volume
+in_degree_centrality,ok,,,0.001,exact,2868,2022-11-01,False,log1p_volume
+out_degree_centrality,ok,,,0.001,exact,2868,2022-11-01,False,log1p_volume
+in_strength,ok,,,0.001,exact,2868,2022-11-01,False,log1p_volume
+out_strength,ok,,,0.001,exact,2868,2022-11-01,False,log1p_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",2868,2022-11-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2868,2022-11-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.005,exact,2868,2022-11-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.003,exact on LSCC,689,2022-11-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.003,exact on LSCC,689,2022-11-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.003,exact on projection LCC,2662,2022-11-01,False,log1p_volume
+betweenness,ok,,,0.215,exact,2868,2022-11-01,False,log1p_volume
+harmonic_in,ok,,,0.316,exact,2868,2022-11-01,False,log1p_volume
+harmonic_out,ok,,,0.316,exact,2868,2022-11-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1544,2022-12-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1544,2022-12-01,False,frequency
+in_strength,ok,,,0.0,exact,1544,2022-12-01,False,frequency
+out_strength,ok,,,0.0,exact,1544,2022-12-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1544,2022-12-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1544,2022-12-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1544,2022-12-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,381,2022-12-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,381,2022-12-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1386,2022-12-01,False,frequency
+betweenness,ok,,,0.047,exact,1544,2022-12-01,False,frequency
+harmonic_in,ok,,,0.074,exact,1544,2022-12-01,False,frequency
+harmonic_out,ok,,,0.074,exact,1544,2022-12-01,False,frequency
+in_degree_centrality,ok,,,0.001,exact,1544,2022-12-01,False,raw_volume
+out_degree_centrality,ok,,,0.001,exact,1544,2022-12-01,False,raw_volume
+in_strength,ok,,,0.001,exact,1544,2022-12-01,False,raw_volume
+out_strength,ok,,,0.001,exact,1544,2022-12-01,False,raw_volume
+pagerank,ok,,,0.001,"exact, damping=0.85",1544,2022-12-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1544,2022-12-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.003,exact,1544,2022-12-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,381,2022-12-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,381,2022-12-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.003,exact on projection LCC,1386,2022-12-01,False,raw_volume
+betweenness,ok,,,0.055,exact,1544,2022-12-01,False,raw_volume
+harmonic_in,ok,,,0.084,exact,1544,2022-12-01,False,raw_volume
+harmonic_out,ok,,,0.084,exact,1544,2022-12-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1544,2022-12-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1544,2022-12-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1544,2022-12-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1544,2022-12-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1544,2022-12-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1544,2022-12-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1544,2022-12-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,381,2022-12-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,381,2022-12-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.002,exact on projection LCC,1386,2022-12-01,False,log1p_volume
+betweenness,ok,,,0.049,exact,1544,2022-12-01,False,log1p_volume
+harmonic_in,ok,,,0.081,exact,1544,2022-12-01,False,log1p_volume
+harmonic_out,ok,,,0.081,exact,1544,2022-12-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1242,2023-01-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1242,2023-01-01,False,frequency
+in_strength,ok,,,0.0,exact,1242,2023-01-01,False,frequency
+out_strength,ok,,,0.0,exact,1242,2023-01-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1242,2023-01-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1242,2023-01-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1242,2023-01-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,300,2023-01-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,300,2023-01-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1044,2023-01-01,False,frequency
+betweenness,ok,,,0.027,exact,1242,2023-01-01,False,frequency
+harmonic_in,ok,,,0.045,exact,1242,2023-01-01,False,frequency
+harmonic_out,ok,,,0.045,exact,1242,2023-01-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,1242,2023-01-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1242,2023-01-01,False,raw_volume
+in_strength,ok,,,0.0,exact,1242,2023-01-01,False,raw_volume
+out_strength,ok,,,0.0,exact,1242,2023-01-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1242,2023-01-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1242,2023-01-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1242,2023-01-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,300,2023-01-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,300,2023-01-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,1044,2023-01-01,False,raw_volume
+betweenness,ok,,,0.028,exact,1242,2023-01-01,False,raw_volume
+harmonic_in,ok,,,0.047,exact,1242,2023-01-01,False,raw_volume
+harmonic_out,ok,,,0.047,exact,1242,2023-01-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1242,2023-01-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1242,2023-01-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1242,2023-01-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1242,2023-01-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1242,2023-01-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1242,2023-01-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.002,exact,1242,2023-01-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,300,2023-01-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,300,2023-01-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,1044,2023-01-01,False,log1p_volume
+betweenness,ok,,,0.029,exact,1242,2023-01-01,False,log1p_volume
+harmonic_in,ok,,,0.047,exact,1242,2023-01-01,False,log1p_volume
+harmonic_out,ok,,,0.047,exact,1242,2023-01-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,929,2023-02-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,929,2023-02-01,False,frequency
+in_strength,ok,,,0.0,exact,929,2023-02-01,False,frequency
+out_strength,ok,,,0.0,exact,929,2023-02-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",929,2023-02-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,929,2023-02-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,929,2023-02-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,253,2023-02-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,253,2023-02-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,786,2023-02-01,False,frequency
+betweenness,ok,,,0.017,exact,929,2023-02-01,False,frequency
+harmonic_in,ok,,,0.027,exact,929,2023-02-01,False,frequency
+harmonic_out,ok,,,0.027,exact,929,2023-02-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,927,2023-02-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,927,2023-02-01,False,raw_volume
+in_strength,ok,,,0.0,exact,927,2023-02-01,False,raw_volume
+out_strength,ok,,,0.0,exact,927,2023-02-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",927,2023-02-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,927,2023-02-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,927,2023-02-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.002,exact on LSCC,253,2023-02-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.002,exact on LSCC,253,2023-02-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,786,2023-02-01,False,raw_volume
+betweenness,ok,,,0.017,exact,927,2023-02-01,False,raw_volume
+harmonic_in,ok,,,0.027,exact,927,2023-02-01,False,raw_volume
+harmonic_out,ok,,,0.027,exact,927,2023-02-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,927,2023-02-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,927,2023-02-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,927,2023-02-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,927,2023-02-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",927,2023-02-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,927,2023-02-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,927,2023-02-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,253,2023-02-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,253,2023-02-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,786,2023-02-01,False,log1p_volume
+betweenness,ok,,,0.021,exact,927,2023-02-01,False,log1p_volume
+harmonic_in,ok,,,0.027,exact,927,2023-02-01,False,log1p_volume
+harmonic_out,ok,,,0.027,exact,927,2023-02-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,755,2023-03-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,755,2023-03-01,False,frequency
+in_strength,ok,,,0.0,exact,755,2023-03-01,False,frequency
+out_strength,ok,,,0.0,exact,755,2023-03-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",755,2023-03-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,755,2023-03-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,755,2023-03-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,146,2023-03-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,146,2023-03-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,658,2023-03-01,False,frequency
+betweenness,ok,,,0.008,exact,755,2023-03-01,False,frequency
+harmonic_in,ok,,,0.012,exact,755,2023-03-01,False,frequency
+harmonic_out,ok,,,0.012,exact,755,2023-03-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,755,2023-03-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,755,2023-03-01,False,raw_volume
+in_strength,ok,,,0.0,exact,755,2023-03-01,False,raw_volume
+out_strength,ok,,,0.0,exact,755,2023-03-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",755,2023-03-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,755,2023-03-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,755,2023-03-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,146,2023-03-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,146,2023-03-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,658,2023-03-01,False,raw_volume
+betweenness,ok,,,0.008,exact,755,2023-03-01,False,raw_volume
+harmonic_in,ok,,,0.011,exact,755,2023-03-01,False,raw_volume
+harmonic_out,ok,,,0.011,exact,755,2023-03-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,755,2023-03-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,755,2023-03-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,755,2023-03-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,755,2023-03-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",755,2023-03-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,755,2023-03-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,755,2023-03-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,146,2023-03-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,146,2023-03-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,658,2023-03-01,False,log1p_volume
+betweenness,ok,,,0.008,exact,755,2023-03-01,False,log1p_volume
+harmonic_in,ok,,,0.011,exact,755,2023-03-01,False,log1p_volume
+harmonic_out,ok,,,0.011,exact,755,2023-03-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,803,2023-04-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,803,2023-04-01,False,frequency
+in_strength,ok,,,0.0,exact,803,2023-04-01,False,frequency
+out_strength,ok,,,0.0,exact,803,2023-04-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",803,2023-04-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,803,2023-04-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,803,2023-04-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,204,2023-04-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,204,2023-04-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,677,2023-04-01,False,frequency
+betweenness,ok,,,0.011,exact,803,2023-04-01,False,frequency
+harmonic_in,ok,,,0.017,exact,803,2023-04-01,False,frequency
+harmonic_out,ok,,,0.017,exact,803,2023-04-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,801,2023-04-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,801,2023-04-01,False,raw_volume
+in_strength,ok,,,0.0,exact,801,2023-04-01,False,raw_volume
+out_strength,ok,,,0.0,exact,801,2023-04-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",801,2023-04-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,801,2023-04-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,801,2023-04-01,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,204,2023-04-01,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on LSCC,204,2023-04-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,677,2023-04-01,False,raw_volume
+betweenness,ok,,,0.011,exact,801,2023-04-01,False,raw_volume
+harmonic_in,ok,,,0.016,exact,801,2023-04-01,False,raw_volume
+harmonic_out,ok,,,0.016,exact,801,2023-04-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,801,2023-04-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,801,2023-04-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,801,2023-04-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,801,2023-04-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",801,2023-04-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,801,2023-04-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,801,2023-04-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,204,2023-04-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,204,2023-04-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,677,2023-04-01,False,log1p_volume
+betweenness,ok,,,0.011,exact,801,2023-04-01,False,log1p_volume
+harmonic_in,ok,,,0.017,exact,801,2023-04-01,False,log1p_volume
+harmonic_out,ok,,,0.017,exact,801,2023-04-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,499,2023-05-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,499,2023-05-01,False,frequency
+in_strength,ok,,,0.0,exact,499,2023-05-01,False,frequency
+out_strength,ok,,,0.0,exact,499,2023-05-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",499,2023-05-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,499,2023-05-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,499,2023-05-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,131,2023-05-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,131,2023-05-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,419,2023-05-01,False,frequency
+betweenness,ok,,,0.005,exact,499,2023-05-01,False,frequency
+harmonic_in,ok,,,0.008,exact,499,2023-05-01,False,frequency
+harmonic_out,ok,,,0.008,exact,499,2023-05-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,499,2023-05-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,499,2023-05-01,False,raw_volume
+in_strength,ok,,,0.0,exact,499,2023-05-01,False,raw_volume
+out_strength,ok,,,0.0,exact,499,2023-05-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",499,2023-05-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,499,2023-05-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,499,2023-05-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,131,2023-05-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,131,2023-05-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.0,exact on projection LCC,419,2023-05-01,False,raw_volume
+betweenness,ok,,,0.004,exact,499,2023-05-01,False,raw_volume
+harmonic_in,ok,,,0.005,exact,499,2023-05-01,False,raw_volume
+harmonic_out,ok,,,0.005,exact,499,2023-05-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,499,2023-05-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,499,2023-05-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,499,2023-05-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,499,2023-05-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",499,2023-05-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,499,2023-05-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,499,2023-05-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,131,2023-05-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,131,2023-05-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,419,2023-05-01,False,log1p_volume
+betweenness,ok,,,0.004,exact,499,2023-05-01,False,log1p_volume
+harmonic_in,ok,,,0.006,exact,499,2023-05-01,False,log1p_volume
+harmonic_out,ok,,,0.006,exact,499,2023-05-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,1046,2023-06-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,1046,2023-06-01,False,frequency
+in_strength,ok,,,0.0,exact,1046,2023-06-01,False,frequency
+out_strength,ok,,,0.0,exact,1046,2023-06-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",1046,2023-06-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1046,2023-06-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1046,2023-06-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,136,2023-06-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,136,2023-06-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,966,2023-06-01,False,frequency
+betweenness,ok,,,0.008,exact,1046,2023-06-01,False,frequency
+harmonic_in,ok,,,0.01,exact,1046,2023-06-01,False,frequency
+harmonic_out,ok,,,0.01,exact,1046,2023-06-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,1044,2023-06-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,1044,2023-06-01,False,raw_volume
+in_strength,ok,,,0.0,exact,1044,2023-06-01,False,raw_volume
+out_strength,ok,,,0.0,exact,1044,2023-06-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1044,2023-06-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1044,2023-06-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1044,2023-06-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,136,2023-06-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,136,2023-06-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.001,exact on projection LCC,966,2023-06-01,False,raw_volume
+betweenness,ok,,,0.008,exact,1044,2023-06-01,False,raw_volume
+harmonic_in,ok,,,0.012,exact,1044,2023-06-01,False,raw_volume
+harmonic_out,ok,,,0.012,exact,1044,2023-06-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,1044,2023-06-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,1044,2023-06-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,1044,2023-06-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,1044,2023-06-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",1044,2023-06-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1044,2023-06-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,1044,2023-06-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,136,2023-06-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,136,2023-06-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,966,2023-06-01,False,log1p_volume
+betweenness,ok,,,0.011,exact,1044,2023-06-01,False,log1p_volume
+harmonic_in,ok,,,0.014,exact,1044,2023-06-01,False,log1p_volume
+harmonic_out,ok,,,0.014,exact,1044,2023-06-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,517,2023-07-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,517,2023-07-01,False,frequency
+in_strength,ok,,,0.0,exact,517,2023-07-01,False,frequency
+out_strength,ok,,,0.0,exact,517,2023-07-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",517,2023-07-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,517,2023-07-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,517,2023-07-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,83,2023-07-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,83,2023-07-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,422,2023-07-01,False,frequency
+betweenness,ok,,,0.002,exact,517,2023-07-01,False,frequency
+harmonic_in,ok,,,0.003,exact,517,2023-07-01,False,frequency
+harmonic_out,ok,,,0.003,exact,517,2023-07-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,515,2023-07-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,515,2023-07-01,False,raw_volume
+in_strength,ok,,,0.0,exact,515,2023-07-01,False,raw_volume
+out_strength,ok,,,0.0,exact,515,2023-07-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",515,2023-07-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,515,2023-07-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,515,2023-07-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,83,2023-07-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,83,2023-07-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.0,exact on projection LCC,422,2023-07-01,False,raw_volume
+betweenness,ok,,,0.003,exact,515,2023-07-01,False,raw_volume
+harmonic_in,ok,,,0.004,exact,515,2023-07-01,False,raw_volume
+harmonic_out,ok,,,0.004,exact,515,2023-07-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,515,2023-07-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,515,2023-07-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,515,2023-07-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,515,2023-07-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",515,2023-07-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,515,2023-07-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,515,2023-07-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,83,2023-07-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,83,2023-07-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.001,exact on projection LCC,422,2023-07-01,False,log1p_volume
+betweenness,ok,,,0.003,exact,515,2023-07-01,False,log1p_volume
+harmonic_in,ok,,,0.004,exact,515,2023-07-01,False,log1p_volume
+harmonic_out,ok,,,0.004,exact,515,2023-07-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,434,2023-08-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,434,2023-08-01,False,frequency
+in_strength,ok,,,0.0,exact,434,2023-08-01,False,frequency
+out_strength,ok,,,0.0,exact,434,2023-08-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",434,2023-08-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,434,2023-08-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,434,2023-08-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,85,2023-08-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,85,2023-08-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,348,2023-08-01,False,frequency
+betweenness,ok,,,0.002,exact,434,2023-08-01,False,frequency
+harmonic_in,ok,,,0.003,exact,434,2023-08-01,False,frequency
+harmonic_out,ok,,,0.003,exact,434,2023-08-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,434,2023-08-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,434,2023-08-01,False,raw_volume
+in_strength,ok,,,0.0,exact,434,2023-08-01,False,raw_volume
+out_strength,ok,,,0.0,exact,434,2023-08-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",434,2023-08-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,434,2023-08-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,434,2023-08-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,85,2023-08-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,85,2023-08-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.0,exact on projection LCC,348,2023-08-01,False,raw_volume
+betweenness,ok,,,0.002,exact,434,2023-08-01,False,raw_volume
+harmonic_in,ok,,,0.003,exact,434,2023-08-01,False,raw_volume
+harmonic_out,ok,,,0.003,exact,434,2023-08-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,434,2023-08-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,434,2023-08-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,434,2023-08-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,434,2023-08-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",434,2023-08-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,434,2023-08-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,434,2023-08-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,85,2023-08-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,85,2023-08-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,348,2023-08-01,False,log1p_volume
+betweenness,ok,,,0.002,exact,434,2023-08-01,False,log1p_volume
+harmonic_in,ok,,,0.003,exact,434,2023-08-01,False,log1p_volume
+harmonic_out,ok,,,0.003,exact,434,2023-08-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,486,2023-09-01,False,frequency
+out_degree_centrality,ok,,,0.0,exact,486,2023-09-01,False,frequency
+in_strength,ok,,,0.0,exact,486,2023-09-01,False,frequency
+out_strength,ok,,,0.0,exact,486,2023-09-01,False,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",486,2023-09-01,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,486,2023-09-01,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,486,2023-09-01,False,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,132,2023-09-01,False,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,132,2023-09-01,False,frequency
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,393,2023-09-01,False,frequency
+betweenness,ok,,,0.003,exact,486,2023-09-01,False,frequency
+harmonic_in,ok,,,0.005,exact,486,2023-09-01,False,frequency
+harmonic_out,ok,,,0.005,exact,486,2023-09-01,False,frequency
+in_degree_centrality,ok,,,0.0,exact,486,2023-09-01,False,raw_volume
+out_degree_centrality,ok,,,0.0,exact,486,2023-09-01,False,raw_volume
+in_strength,ok,,,0.0,exact,486,2023-09-01,False,raw_volume
+out_strength,ok,,,0.0,exact,486,2023-09-01,False,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",486,2023-09-01,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,486,2023-09-01,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,486,2023-09-01,False,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,132,2023-09-01,False,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,132,2023-09-01,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.0,exact on projection LCC,393,2023-09-01,False,raw_volume
+betweenness,ok,,,0.003,exact,486,2023-09-01,False,raw_volume
+harmonic_in,ok,,,0.005,exact,486,2023-09-01,False,raw_volume
+harmonic_out,ok,,,0.005,exact,486,2023-09-01,False,raw_volume
+in_degree_centrality,ok,,,0.0,exact,486,2023-09-01,False,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,486,2023-09-01,False,log1p_volume
+in_strength,ok,,,0.0,exact,486,2023-09-01,False,log1p_volume
+out_strength,ok,,,0.0,exact,486,2023-09-01,False,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",486,2023-09-01,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,486,2023-09-01,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.001,exact,486,2023-09-01,False,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,132,2023-09-01,False,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,132,2023-09-01,False,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,393,2023-09-01,False,log1p_volume
+betweenness,ok,,,0.003,exact,486,2023-09-01,False,log1p_volume
+harmonic_in,ok,,,0.005,exact,486,2023-09-01,False,log1p_volume
+harmonic_out,ok,,,0.005,exact,486,2023-09-01,False,log1p_volume
+in_degree_centrality,ok,,,0.0,exact,265,2023-10-01,True,frequency
+out_degree_centrality,ok,,,0.0,exact,265,2023-10-01,True,frequency
+in_strength,ok,,,0.0,exact,265,2023-10-01,True,frequency
+out_strength,ok,,,0.0,exact,265,2023-10-01,True,frequency
+pagerank,ok,,,0.0,"exact, damping=0.85",265,2023-10-01,True,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.0,exact,265,2023-10-01,True,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.0,exact,265,2023-10-01,True,frequency
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,78,2023-10-01,True,frequency
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,78,2023-10-01,True,frequency
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,223,2023-10-01,True,frequency
+betweenness,ok,,,0.001,exact,265,2023-10-01,True,frequency
+harmonic_in,ok,,,0.002,exact,265,2023-10-01,True,frequency
+harmonic_out,ok,,,0.002,exact,265,2023-10-01,True,frequency
+in_degree_centrality,ok,,,0.0,exact,265,2023-10-01,True,raw_volume
+out_degree_centrality,ok,,,0.0,exact,265,2023-10-01,True,raw_volume
+in_strength,ok,,,0.0,exact,265,2023-10-01,True,raw_volume
+out_strength,ok,,,0.0,exact,265,2023-10-01,True,raw_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",265,2023-10-01,True,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.0,exact,265,2023-10-01,True,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.0,exact,265,2023-10-01,True,raw_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,78,2023-10-01,True,raw_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,78,2023-10-01,True,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.0,exact on projection LCC,223,2023-10-01,True,raw_volume
+betweenness,ok,,,0.001,exact,265,2023-10-01,True,raw_volume
+harmonic_in,ok,,,0.001,exact,265,2023-10-01,True,raw_volume
+harmonic_out,ok,,,0.001,exact,265,2023-10-01,True,raw_volume
+in_degree_centrality,ok,,,0.0,exact,265,2023-10-01,True,log1p_volume
+out_degree_centrality,ok,,,0.0,exact,265,2023-10-01,True,log1p_volume
+in_strength,ok,,,0.0,exact,265,2023-10-01,True,log1p_volume
+out_strength,ok,,,0.0,exact,265,2023-10-01,True,log1p_volume
+pagerank,ok,,,0.0,"exact, damping=0.85",265,2023-10-01,True,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.0,exact,265,2023-10-01,True,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.0,exact,265,2023-10-01,True,log1p_volume
+eigenvector_in_lscc,ok,,,0.001,exact on LSCC,78,2023-10-01,True,log1p_volume
+eigenvector_out_lscc,ok,,,0.001,exact on LSCC,78,2023-10-01,True,log1p_volume
+eigenvector_undirected_lcc,ok,,,0.0,exact on projection LCC,223,2023-10-01,True,log1p_volume
+betweenness,ok,,,0.001,exact,265,2023-10-01,True,log1p_volume
+harmonic_in,ok,,,0.002,exact,265,2023-10-01,True,log1p_volume
+harmonic_out,ok,,,0.002,exact,265,2023-10-01,True,log1p_volume
+in_degree_centrality,ok,,,0.014,exact,87031,FULL_PERIOD,False,frequency
+out_degree_centrality,ok,,,0.014,exact,87031,FULL_PERIOD,False,frequency
+in_strength,ok,,,0.014,exact,87031,FULL_PERIOD,False,frequency
+out_strength,ok,,,0.014,exact,87031,FULL_PERIOD,False,frequency
+pagerank,ok,,,0.019,"exact, damping=0.85",87031,FULL_PERIOD,False,frequency
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.179,exact,87031,FULL_PERIOD,False,frequency
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.179,exact,87031,FULL_PERIOD,False,frequency
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.103,exact on LSCC,40498,FULL_PERIOD,False,frequency
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.103,exact on LSCC,40498,FULL_PERIOD,False,frequency
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.094,exact on projection LCC,87027,FULL_PERIOD,False,frequency
+betweenness,ok,,,23.335,"source sampling, k=3000, rescaled n/k",3000,FULL_PERIOD,False,frequency
+harmonic_in,ok,,,100.041,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9802,FULL_PERIOD,False,frequency
+harmonic_out,ok,,,100.041,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9802,FULL_PERIOD,False,frequency
+in_degree_centrality,ok,,,0.022,exact,86965,FULL_PERIOD,False,raw_volume
+out_degree_centrality,ok,,,0.022,exact,86965,FULL_PERIOD,False,raw_volume
+in_strength,ok,,,0.022,exact,86965,FULL_PERIOD,False,raw_volume
+out_strength,ok,,,0.022,exact,86965,FULL_PERIOD,False,raw_volume
+pagerank,ok,,,0.022,"exact, damping=0.85",86965,FULL_PERIOD,False,raw_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.235,exact,86965,FULL_PERIOD,False,raw_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.235,exact,86965,FULL_PERIOD,False,raw_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.141,exact on LSCC,40489,FULL_PERIOD,False,raw_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.141,exact on LSCC,40489,FULL_PERIOD,False,raw_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.124,exact on projection LCC,86965,FULL_PERIOD,False,raw_volume
+betweenness,ok,,,25.938,"source sampling, k=3000, rescaled n/k",3000,FULL_PERIOD,False,raw_volume
+harmonic_in,ok,,,126.302,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9820,FULL_PERIOD,False,raw_volume
+harmonic_out,ok,,,126.302,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9820,FULL_PERIOD,False,raw_volume
+in_degree_centrality,ok,,,0.014,exact,86965,FULL_PERIOD,False,log1p_volume
+out_degree_centrality,ok,,,0.014,exact,86965,FULL_PERIOD,False,log1p_volume
+in_strength,ok,,,0.014,exact,86965,FULL_PERIOD,False,log1p_volume
+out_strength,ok,,,0.014,exact,86965,FULL_PERIOD,False,log1p_volume
+pagerank,ok,,,0.017,"exact, damping=0.85",86965,FULL_PERIOD,False,log1p_volume
+hub,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.204,exact,86965,FULL_PERIOD,False,log1p_volume
+authority,ok,,"More than 30% of hub or authority scores are zeros. The presence of zero values indicates that the solution is not unique, thus the returned result may not be meaningful.",0.204,exact,86965,FULL_PERIOD,False,log1p_volume
+eigenvector_in_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.11,exact on LSCC,40489,FULL_PERIOD,False,log1p_volume
+eigenvector_out_lscc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.11,exact on LSCC,40489,FULL_PERIOD,False,log1p_volume
+eigenvector_undirected_lcc,ok,,"Some eigenvector centralities are nearly zero, indicating that the graph may not be (strongly) connected. Eigenvector centrality is not meaningful for disconnected graphs.",0.092,exact on projection LCC,86965,FULL_PERIOD,False,log1p_volume
+betweenness,ok,,,22.425,"source sampling, k=3000, rescaled n/k",3000,FULL_PERIOD,False,log1p_volume
+harmonic_in,ok,,,115.299,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9369,FULL_PERIOD,False,log1p_volume
+harmonic_out,ok,,,115.299,candidate set: top 3000 by degree/strength/PageRank + 3000 random,9369,FULL_PERIOD,False,log1p_volume

@@ -1,0 +1,148 @@
+# =============================================================================================
+# Studio A — Social Network Analysis delle reti di trasferimenti ERC-20 (TGS/MiNT, Zenodo 15364297)
+# =============================================================================================
+# Tutte le scelte analitiche stanno qui. A ogni run il file viene copiato nella cartella del run
+# (config.toml), così ogni risultato resta collegato ai parametri esatti che lo hanno prodotto.
+
+# Seme unico per tutto ciò che è casuale: campionamento dei nodi per cammini/centralità, null model, Leiden/Louvain, bootstrap dei fit, layout delle figure.
+seed = 42
+
+
+[run]   # come viene eseguito il run lanciato da src/study_A/main.py
+task = "all"           # "all"     = analisi + overlap + tabelle + figure
+                       # "figures" = rigenera SOLO tabelle riassuntive e figure del run `run_id` dai CSV
+                       #             salvati, senza ricalcolare nulla (es. dopo aver cambiato [figures])
+workers = 3            # token analizzati in parallelo (1 processo per token; ognuno usa qualche GB di RAM)
+make_figures = true    # false = solo tabelle (le figure si possono rigenerare dopo con task = "figures")
+run_id = "SNA"         # nome della cartella reports/study_A/runs/<run_id>/; "" = data e ora UTC.
+                       # Se il run esiste già: i token già completati vengono RIUSATI (non ricalcolati),
+                       # quelli nuovi in [selection] vengono analizzati, poi overlap, tabelle e figure
+                       # sono rifatti su TUTTI i token del run. Se le impostazioni analitiche (seed,
+                       # windows, filters, centrality, topology, null_model, communities, distributions)
+                       # sono cambiate rispetto ai token già fatti, il run si ferma con un errore:
+                       # per confrontare parametri diversi usa un nuovo run_id.
+
+
+[paths]
+data_dir = "datasets/TGS_edgelists"   # dati grezzi
+output_root = "reports/study_A"       # i run finiscono in reports/study_A/runs/<run_id>/
+cache_dir = "reports/study_A/cache"   # trasferimenti unici già deduplicati (si rigenerano da soli
+                                      # se cambia il file sorgente o la versione del preprocessing)
+
+
+[selection]   # quali token analizzare
+# mode = "explicit": usa esattamente la lista `tokens` (nomi dei file senza "_edgelist.txt").
+#                    I parametri sotto (n_tokens, min_coverage_days, ...) vengono ignorati.
+# mode = "ranked":   scelta automatica e documentata: tiene i token con indirizzi esadecimali,
+#                    almeno `min_coverage_days` giorni di dati e al più `max_nodes` indirizzi,
+#                    li ordina per `rank_by` (decrescente) e prende i primi `n_tokens`.
+# In entrambi i casi la decisione (e il motivo per ogni token) è salvata in selection/.
+mode = "explicit"
+tokens = ["RARI", "SWAP", "BITCOIN", "POLS"]
+n_tokens = 3                    # solo per "ranked": quanti token selezionare
+min_coverage_days = 365         # solo per "ranked": copertura minima in giorni di calendario
+max_nodes = 250000              # solo per "ranked": limite di fattibilità computazionale (indirizzi)
+rank_by = "unique_addresses"    # solo per "ranked": colonna di token_profile.csv usata per ordinare
+                                # (es. "unique_addresses", "unique_events", "coverage_days")
+require_hex_addresses = true    # solo per "ranked": scarta i file con ID interi anonimizzati
+                                # (ALBT, POLS), dove lo zero address non è riconoscibile e il
+                                # confronto tra token è impossibile
+profile_workers = 6             # processi paralleli per il profilo iniziale degli 84 file
+
+
+[windows]   # finestre temporali
+# Finestre di calendario DISGIUNTE [inizio, fine): ogni trasferimento cade in una sola finestra.
+# (Gli "snapshot" TGS non vengono usati perché sono finestre scorrevoli di 7 giorni sovrapposte.)
+freq = "MS"               # alias pandas: "MS" = mesi, "QS" = trimestri, "W-MON" = settimane.
+                          # Finestre più corte = più punti nel tempo ma grafi più piccoli e rumorosi, e tempi di calcolo più lunghi (ogni finestra rifà tutte le analisi).
+min_coverage = 0.8        # una finestra coperta dai dati per meno dell'80% dei suoi giorni
+                          # (di solito il primo e l'ultimo mese) è marcata "partial": resta nelle
+                          # tabelle ma nelle figure ha il marker vuoto, perché non è confrontabile
+include_full_period = true  # analizza anche il grafo dell'intero periodo (FULL_PERIOD): serve per distribuzioni dei gradi, null model, stabilità delle comunità e figure di rete
+
+
+[filters]   # cosa entra nel grafo analitico (tutto ciò che si toglie è contato negli audit)
+exclude_self_loops = true     # toglie i trasferimenti di un indirizzo verso se stesso
+exclude_zero_address = true   # toglie 0x000...000 (mint e burn), che dominerebbe le centralità
+drop_zero_volume_pairs_in_volume_graphs = true
+                              # nei grafi a volume toglie le coppie che hanno trasferito 0 token in totale (non hanno una "forza" di legame); restano nel grafo a frequenza
+
+
+[centrality]
+# Varianti di peso degli archi (ognuna produce centralità e comunità separate):
+#   "frequency"    = numero di trasferimenti u -> v nella finestra
+#   "raw_volume"   = somma degli importi grezzi (unità on-chain, NON confrontabili tra token)
+#   "log1p_volume" = log(1 + volume), meno dominata dai valori estremi
+# Toglierne una riduce i tempi di circa un terzo.
+variants = ["frequency", "raw_volume", "log1p_volume"]
+exact_max_nodes = 5000          # fino a questa dimensione betweenness e closeness armonica sono esatte;
+                                # sopra si usano le approssimazioni qui sotto (dichiarate in centrality_status.csv)
+betweenness_pivots = 3000       # sopra la soglia: betweenness stimata partendo da questo numero di
+                                # nodi sorgente casuali (Brandes-Pich), riscalata. Più alto = più preciso e più lento
+harmonic_top_candidates = 3000  # sopra la soglia: la closeness armonica si calcola solo per i primi N nodi
+                                # per grado/strength/PageRank...
+harmonic_random_candidates = 3000  # ...più N nodi casuali; per gli altri nodi resta vuota (NaN)
+pagerank_damping = 0.85         # fattore di smorzamento di PageRank (0.85 è il valore standard)
+top_k = 20                      # quanti indirizzi salvare per misura in centrality_topk.csv
+rank_stability_k = 100          # top-k usato per misurare quanto i nodi più centrali restano gli
+                                # stessi da un mese al successivo (Jaccard e Kendall tau)
+
+
+[topology]   # misure strutturali sulla proiezione non orientata
+exact_path_max_nodes = 5000   # fino a questa dimensione della componente gigante: cammino medio e
+                              # diametro esatti; sopra: stima con BFS da un campione di sorgenti
+                              # (e il diametro diventa un limite inferiore)
+path_sources = 500            # numero di sorgenti BFS per la stima (usato anche nei null model)
+rich_club_points = 40         # numero di soglie di grado k (in scala log) per il coefficiente rich-club
+
+
+[null_model]   # confronto con reti casuali che conservano i gradi (small-world, rich-club)
+n_null = 15                 # quante reti casuali generare per finestra. È la parte più costosa:
+                            # dimezzarlo dimezza circa questo passo, ma rende meno stabili media e
+                            # deviazione standard del null
+swaps_per_edge = 10         # scambi di archi per arco a ogni rewiring (10 è il valore abituale
+                            # per "mescolare" bene la rete mantenendo i gradi)
+run_on_full_period = true   # esegue i null model anche sul grafo dell'intero periodo (il più grande)
+
+
+[communities]   # Leiden (principale) e Louvain (confronto) sulla proiezione pesata
+resolution = 1.0            # risoluzione della modularità: >1 = comunità più piccole e numerose,
+                            # <1 = più grandi. 1.0 è la modularità classica
+stability_seeds = 10        # solo FULL_PERIOD: Leiden rieseguito con 10 semi diversi per misurare
+                            # quanto la partizione è stabile (ARI tra coppie di semi)
+resolution_sweep = [0.25, 0.5, 1.0, 2.0, 4.0]
+                            # solo FULL_PERIOD: risoluzioni provate per vedere come cambiano numero
+                            # di comunità e modularità
+persistence_min_size = 10   # nel confronto tra mesi consecutivi si seguono solo le comunità con
+                            # almeno 10 indirizzi (quelle minuscole renderebbero il Jaccard rumoroso)
+top_central_per_community = 5  # indirizzi con PageRank più alto salvati per ciascuna delle prime 20 comunità
+
+
+[distributions]   # analisi delle code di gradi e strength (metodo Clauset-Shalizi-Newman 2009)
+min_tail = 50               # la coda (x >= x_min) deve contenere almeno 50 nodi, altrimenti il fit
+                            # non viene tentato
+max_xmin_candidates = 200   # quanti valori di x_min provare (scelto quello con KS minimo)
+gof_bootstrap = 100         # repliche bootstrap per il p-value di bontà di adattamento della power law
+                            # (p >= 0.1 = power law plausibile). È il passo più lento dei fit;
+                            # 0 = salta il test (il p-value resta vuoto)
+
+
+[overlap]   # confronto tra coppie dei token selezionati (serve almeno 2 token)
+enabled = true
+min_shared = 30          # ARI/NMI tra le comunità dei due token si calcola solo se ci sono almeno
+                         # 30 indirizzi in comune (mese o periodo comune); sotto, resta vuoto
+permutations = 200       # permutazioni delle etichette per il null dell'ARI (quanto accordo
+                         # ci si aspetta per caso)
+matrix_communities = 10  # righe/colonne della matrice comunità x comunità (fig19); le altre
+                         # comunità finiscono in "other"
+
+
+[figures]
+formats = ["png"]        # formati salvati ["pdf", "png"]: il PDF è vettoriale,
+dpi = 300                # risoluzione dei PNG
+embed_titles = true     # false = titolo solo nelle didascalie (figures/captions.md), come si usa nei
+                         # paper; true = titolo disegnato anche dentro la figura
+drawing_max_nodes = 600  # nodi al massimo nel disegno campionato della rete (fig17): solo estetica
+drawing_communities = 5  # comunità colorate nel disegno di rete; 3 è il massimo di colori che restano
+                         # distinguibili anche per chi ha deficit nella visione dei colori
+quotient_communities = 15  # comunità mostrate nel grafo quoziente (fig16); le altre sono unite in "other"

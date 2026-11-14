@@ -10,9 +10,13 @@ much of a model's score is explained by destination activity alone (assistant.md
 
 from __future__ import annotations
 
+import ctypes
+import sys
+
 import numpy as np
 import scipy.sparse as sp
 import torch
+import torch_cluster  # noqa: F401  (registers torch.ops.torch_cluster.random_walk)
 from torch.utils.data import DataLoader
 from torch_geometric.nn import Node2Vec  # noqa: F401  (used in fit_node2vec)
 
@@ -44,16 +48,33 @@ def common_neighbours(target: TargetWindow, src: np.ndarray, dst: np.ndarray, n_
 
 
 
+_CRT = ctypes.cdll.ucrtbase if sys.platform == "win32" else ctypes.CDLL(None)
+
+
+def _seeded_biased_walk(rowptr, col, start, walk_length, p, q):
+    """torch-cluster's CPU biased walk draws from C ``rand()``, not torch's RNG: seed it from torch
+    and use one thread (``rand()`` state is per thread), so the walks follow ``torch.manual_seed``."""
+    _CRT.srand(int(torch.randint(2**31 - 1, ()).item()))
+    n_threads = torch.get_num_threads()
+    torch.set_num_threads(1)
+    try:
+        return torch.ops.torch_cluster.random_walk(rowptr, col, start, walk_length, p, q)
+    finally:
+        torch.set_num_threads(n_threads)
+
+
 def fit_node2vec(target: TargetWindow, n_nodes: int, cfg: Node2VecConfig, device: torch.device,
-                 seed: int) -> np.ndarray:
+                 seed: int, p: float = 1.0, q: float = 1.0) -> np.ndarray:
     """Train ``torch_geometric.nn.Node2Vec`` on the history graph; return embeddings [n_nodes, dim]."""
     torch.manual_seed(seed)
 
     edge_index = torch.as_tensor(np.concat([target.history_edges, target.history_edges[::-1]], axis=1))
 
     model = Node2Vec(edge_index, embedding_dim=cfg.dim, walk_length=cfg.walk_length,
-                     context_size= cfg.context_size, walks_per_node=cfg.walks_per_node,
+                     context_size= cfg.context_size, walks_per_node=cfg.walks_per_node, p=p, q=q,
                      num_negative_samples=1, num_nodes=n_nodes, sparse=True).to(device)
+    if (p, q) != (1.0, 1.0):   # pyg-lib 0.7.0 only samples uniform walks; torch-cluster does biased ones
+        model.random_walk_fn = _seeded_biased_walk
 
     # Walks start from history nodes only: later nodes are isolated here and would give 1-node walks.
     loader = DataLoader(torch.as_tensor(target.history_nodes), batch_size=cfg.batch_size, shuffle=True,

@@ -75,11 +75,13 @@ class LinkPredictor(nn.Module):
 
 
 def train_model(model: LinkPredictor, train_windows: list[dict], val_windows: list[dict], cfg: NeuralConfig,
-                n_neg_train: int, seed: int) -> tuple[LinkPredictor, pd.DataFrame]:
+                n_neg_train: int, seed: int, neg_pools: tuple[str, ...] = ("history_nodes",)) -> tuple[LinkPredictor, pd.DataFrame]:
     """Train with early stopping on mean validation AP; return (best model, training curve).
 
     Every element of ``*_windows`` is a dict already on the device, built in pipeline.py:
-        x, edge_index, src, dst, label (val: fixed eval pairs), history_nodes, positives (train)
+        x, edge_index, src, dst, label (val: fixed eval pairs), history_nodes, recent_receivers, positives (train)
+    ``neg_pools``: window keys training negatives are drawn from (history_nodes, recent_receivers);
+    with several pools each negative picks one of them with equal probability.
     Training curve columns: epoch, train_loss, val_ap.
     """
     torch.manual_seed(seed)
@@ -91,12 +93,20 @@ def train_model(model: LinkPredictor, train_windows: list[dict], val_windows: li
         model.train()
         losses = []
         for w in train_windows:
-            # Fresh negatives every epoch: same source as each positive, random history destination.
+            # Fresh negatives every epoch: same source as each positive, random destination from neg_pools.
             # A rare false negative (a pair already linked) is tolerated here; eval negatives are exact.
             pos_src, pos_dst = w["positives"][:, 0], w["positives"][:, 1]
             neg_src = pos_src.repeat_interleave(n_neg_train)
-            pick = torch.randint(len(w["history_nodes"]), (len(neg_src),), device=neg_src.device)
-            neg_dst = w["history_nodes"][pick]
+            if len(neg_pools) == 1:   # no extra RNG draw: keeps single-pool runs identical to earlier ones
+                pool = w[neg_pools[0]]
+                neg_dst = pool[torch.randint(len(pool), (len(neg_src),), device=neg_src.device)]
+            else:
+                which = torch.randint(len(neg_pools), (len(neg_src),), device=neg_src.device)
+                neg_dst = torch.empty_like(neg_src)
+                for i, key in enumerate(neg_pools):
+                    mask = which == i
+                    pool = w[key]
+                    neg_dst[mask] = pool[torch.randint(len(pool), (int(mask.sum()),), device=neg_src.device)]
             src, dst = torch.cat([pos_src, neg_src]), torch.cat([pos_dst, neg_dst])
             labels = torch.cat([torch.ones(len(pos_src)), torch.zeros(len(neg_src))]).to(src.device)
 

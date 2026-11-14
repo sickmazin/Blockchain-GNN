@@ -1,0 +1,40 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Tail analysis (full period). $\mathcal{R}<0$ favours the alternative; power-law plausibility requires $p_{\mathrm{GOF}}\geq0.1$.}
+\label{tab:tails}
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+Token & Graph & Quantity & $x_{\min}$ & $\hat\alpha$ & $n_{\mathrm{tail}}$ & $p_{\mathrm{GOF}}$ & $\mathcal{R}_{\mathrm{LN}}$ & $p$ & $\mathcal{R}_{\mathrm{Exp}}$ & $p$ & $\mathcal{R}_{\mathrm{cut}}$ & $p$ \\
+\midrule
+RARI & frequency & in\_degree & 1.000 & 3.043 & 87{,}026 & 0.190 & -4.133 & $3.58\times10^{-5}$ & 3.842 & $1.22\times10^{-4}$ & $-1.98\times10^{-8}$ & 1.000 \\
+RARI & frequency & out\_degree & 2.000 & 3.307 & 16{,}479 & 0.000 & -6.981 & $2.94\times10^{-12}$ & 4.207 & $2.58\times10^{-5}$ & $-3.69\times10^{-9}$ & 1.000 \\
+RARI & frequency & undirected\_degree & 2.000 & 3.364 & 59{,}474 & 0.000 & -11.434 & $2.83\times10^{-30}$ & 4.536 & $5.73\times10^{-6}$ & $-7.16\times10^{-9}$ & 1.000 \\
+RARI & frequency & in\_strength & 2.000 & 2.237 & 36{,}135 & 0.010 & -1.734 & 0.083 & 5.255 & $1.48\times10^{-7}$ & -0.001 & 0.964 \\
+RARI & frequency & out\_strength & 2.000 & 2.302 & 28{,}921 & 0.000 & -5.262 & $1.43\times10^{-7}$ & 5.740 & $9.49\times10^{-9}$ & $-3.23\times10^{-4}$ & 0.980 \\
+RARI & raw\_volume & in\_strength & 2{,}572{,}866{,}127{,}448{,}696{,}160{,}256 & 1.798 & 4{,}303 & 0.100 & -1.050 & 0.294 & 8.577 & $9.74\times10^{-18}$ & -- & -- \\
+RARI & raw\_volume & out\_strength & 3{,}285{,}272{,}199{,}999{,}999{,}967{,}232 & 1.811 & 3{,}444 & 0.200 & -0.745 & 0.456 & 8.061 & $7.58\times10^{-16}$ & -- & -- \\
+SWAP & frequency & in\_degree & 4.000 & 3.789 & 8{,}293 & 0.000 & -4.537 & $5.71\times10^{-6}$ & 4.226 & $2.38\times10^{-5}$ & $-9.88\times10^{-10}$ & 1.000 \\
+SWAP & frequency & out\_degree & 2.000 & 3.326 & 21{,}102 & 0.000 & -1.783 & 0.075 & 4.361 & $1.29\times10^{-5}$ & $-4.94\times10^{-9}$ & 1.000 \\
+SWAP & frequency & undirected\_degree & 4.000 & 3.566 & 13{,}290 & 0.000 & -1.599 & 0.110 & 4.901 & $9.53\times10^{-7}$ & $-1.88\times10^{-9}$ & 1.000 \\
+SWAP & frequency & in\_strength & 6.000 & 2.386 & 10{,}870 & 0.000 & 2.098 & 0.036 & 3.860 & $1.13\times10^{-4}$ & $-2.15\times10^{-4}$ & 0.983 \\
+SWAP & frequency & out\_strength & 5.000 & 2.303 & 10{,}206 & 0.000 & 0.816 & 0.414 & 3.914 & $9.08\times10^{-5}$ & $-4.49\times10^{-4}$ & 0.976 \\
+SWAP & raw\_volume & in\_strength & 25{,}615{,}436{,}065{,}943{,}108{,}714{,}496 & 1.834 & 6{,}472 & 0.000 & -2.952 & 0.003 & 5.470 & $4.49\times10^{-8}$ & -- & -- \\
+SWAP & raw\_volume & out\_strength & 20{,}332{,}072{,}037{,}723{,}297{,}284{,}096 & 1.834 & 7{,}718 & 0.000 & -2.616 & 0.009 & 5.857 & $4.71\times10^{-9}$ & -- & -- \\
+BITCOIN & frequency & in\_degree & 2.000 & 3.577 & 10{,}311 & 0.000 & -0.787 & 0.432 & 3.283 & 0.001 & $-1.51\times10^{-9}$ & 1.000 \\
+BITCOIN & frequency & out\_degree & 2.000 & 3.549 & 8{,}748 & 0.000 & -2.713 & 0.007 & 3.903 & $9.50\times10^{-5}$ & $-1.38\times10^{-9}$ & 1.000 \\
+BITCOIN & frequency & undirected\_degree & 2.000 & 3.425 & 19{,}650 & 0.000 & 2.006 & 0.045 & 3.468 & $5.24\times10^{-4}$ & $-1.22\times10^{-9}$ & 1.000 \\
+BITCOIN & frequency & in\_strength & 13.000 & 2.208 & 2{,}089 & 0.660 & -0.011 & 0.991 & 3.915 & $9.02\times10^{-5}$ & -0.001 & 0.963 \\
+BITCOIN & frequency & out\_strength & 11.000 & 2.179 & 2{,}069 & 0.340 & 0.375 & 0.707 & 4.030 & $5.58\times10^{-5}$ & -0.001 & 0.960 \\
+BITCOIN & raw\_volume & in\_strength & 199{,}320{,}091{,}802{,}045 & 1.998 & 1{,}619 & 0.000 & -1.149 & 0.251 & 3.423 & $6.19\times10^{-4}$ & -- & -- \\
+BITCOIN & raw\_volume & out\_strength & 243{,}220{,}633{,}012{,}975 & 2.022 & 1{,}293 & 0.000 & -0.585 & 0.558 & 3.598 & $3.21\times10^{-4}$ & -- & -- \\
+SUPER & frequency & in\_degree & 1.000 & 2.907 & 82{,}974 & 0.250 & 1.734 & 0.083 & 3.739 & $1.85\times10^{-4}$ & $-5.29\times10^{-8}$ & 1.000 \\
+SUPER & frequency & out\_degree & 2.000 & 3.198 & 12{,}796 & 0.000 & -3.208 & 0.001 & 5.080 & $3.78\times10^{-7}$ & $-2.30\times10^{-9}$ & 1.000 \\
+SUPER & frequency & undirected\_degree & 3.000 & 3.199 & 14{,}241 & 0.000 & -1.561 & 0.119 & 5.690 & $1.27\times10^{-8}$ & $-3.53\times10^{-9}$ & 1.000 \\
+SUPER & frequency & in\_strength & 1.000 & 2.169 & 82{,}974 & 1.000 & 6.639 & $3.16\times10^{-11}$ & 5.259 & $1.45\times10^{-7}$ & -0.002 & 0.949 \\
+SUPER & frequency & out\_strength & 1.000 & 2.223 & 63{,}849 & 0.250 & 8.757 & $2.00\times10^{-18}$ & 5.609 & $2.03\times10^{-8}$ & $-6.99\times10^{-4}$ & 0.970 \\
+SUPER & raw\_volume & in\_strength & 59{,}716{,}642{,}564{,}215{,}058{,}464{,}768 & 1.747 & 3{,}973 & 0.000 & 0.395 & 0.693 & 10.000 & $1.52\times10^{-23}$ & -- & -- \\
+SUPER & raw\_volume & out\_strength & 18{,}656{,}995{,}641{,}940{,}816{,}953{,}344 & 1.708 & 8{,}274 & 0.000 & -0.931 & 0.352 & 11.719 & $1.02\times10^{-31}$ & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

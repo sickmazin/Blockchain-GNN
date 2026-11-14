@@ -42,13 +42,21 @@ from .evaluate import positive_ranks  # noqa: E402
 FLOOR = "dst_popularity"
 
 MODEL_LABELS = {"dst_popularity": "Dst popularity", "preferential_attachment": "Pref. attachment",
-                "common_neighbours": "Common neighbours", "node2vec": "Node2Vec (p=q=1)",
-                "graphsage": "GraphSAGE", "gat": "GAT"}
+                "common_neighbours": "Common neighbours", "node2vec": "Node2Vec",
+                "graphsage": "GraphSAGE", "gat": "GAT",
+                "graphsage_recent": "GraphSAGE (recent-trained)", "gat_recent": "GAT (recent-trained)",
+                "graphsage_mixed": "GraphSAGE (mixed-trained)", "gat_mixed": "GAT (mixed-trained)"}
 # Fixed categorical slots, validated with the dataviz palette script (CVD and normal-vision PASS;
 # three hues < 3:1 on white -> models are always also named by text and marker shape).
-_SLOTS = ["preferential_attachment", "common_neighbours", "node2vec", "graphsage", "gat", "dst_popularity"]
-MODEL_COLORS = dict(zip(_SLOTS, ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"]))
-MODEL_MARKERS = dict(zip(_SLOTS, ["o", "s", "^", "D", "v", "P"]))
+_SLOTS = ["preferential_attachment", "common_neighbours", "node2vec", "graphsage", "gat", "dst_popularity",
+          "graphsage_recent", "gat_recent"]
+MODEL_COLORS = dict(zip(_SLOTS, ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300",
+                                 "#6250d6", "#e34948"]))
+MODEL_MARKERS = dict(zip(_SLOTS, ["o", "s", "^", "D", "v", "P", "X", "<"]))
+# shortcut: only 8 validated hues, so *_mixed reuses the *_recent hue with its own marker and label;
+# fine while the two variants live in different runs, add a 9th validated slot if they ever share one
+MODEL_COLORS |= {"graphsage_mixed": MODEL_COLORS["graphsage_recent"], "gat_mixed": MODEL_COLORS["gat_recent"]}
+MODEL_MARKERS |= {"graphsage_mixed": "*", "gat_mixed": ">"}
 NEG_LABELS = {"uniform": "uniform negatives", "recent": "recent-receiver negatives"}
 PHASE_SHADE = {"train": "#f4f7fc", "val": "#fdf0e9", "test": "#eaf7f1"}   # very light, behind the data
 RING = "#ffffff"   # surface-coloured edge that separates a marker from the line under it
@@ -267,7 +275,7 @@ def fig6_training_curves(curves: pd.DataFrame) -> plt.Figure:
             b.plot(best["epoch"], best["val_ap"], marker=MODEL_MARKERS[m], color=MODEL_COLORS[m], ms=5,
                    mec=RING, mew=0.8)
     a.set(xlabel="epoch", ylabel="training loss (BCE)", title="(a) Training loss")
-    b.set(xlabel="epoch", ylabel="validation AP (uniform negatives)",
+    b.set(xlabel="epoch", ylabel="validation AP (early-stopping pairs)",
           title="(b) Validation AP · marker = selected epoch")
     a.legend(loc="upper right")
     return fig

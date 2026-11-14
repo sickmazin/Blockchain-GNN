@@ -1,0 +1,50 @@
+2026-10-23 20:30:35 | INFO | RARI: using cached deduplicated events (C:\PROJECT\Blockchain-GNN\reports\study_A\cache\RARI)
+2026-10-23 20:30:36 | INFO | RARI | window 2020-07-01 | 10,912 unique events
+2026-10-23 20:30:38 | INFO | RARI | window 2020-08-01 | 12,318 unique events
+2026-10-23 20:30:41 | INFO | RARI | window 2020-09-01 | 53,460 unique events
+2026-10-23 20:31:06 | INFO | RARI | window 2020-10-01 | 31,266 unique events
+2026-10-23 20:31:22 | INFO | RARI | window 2020-11-01 | 20,731 unique events
+2026-10-23 20:31:30 | INFO | RARI | window 2020-12-01 | 18,684 unique events
+2026-10-23 20:31:39 | INFO | RARI | window 2021-01-01 | 15,501 unique events
+2026-10-23 20:31:47 | INFO | RARI | window 2021-02-01 | 29,058 unique events
+2026-10-23 20:32:11 | INFO | RARI | window 2021-03-01 | 42,251 unique events
+2026-10-23 20:32:49 | INFO | RARI | window 2021-04-01 | 32,393 unique events
+2026-10-23 20:33:13 | INFO | RARI | window 2021-05-01 | 21,925 unique events
+2026-10-23 20:33:27 | INFO | RARI | window 2021-06-01 | 27,166 unique events
+2026-10-23 20:33:38 | INFO | RARI | window 2021-07-01 | 27,347 unique events
+2026-10-23 20:33:50 | INFO | RARI | window 2021-08-01 | 30,430 unique events
+2026-10-23 20:34:05 | INFO | RARI | window 2021-09-01 | 14,644 unique events
+2026-10-23 20:34:11 | INFO | RARI | window 2021-10-01 | 16,773 unique events
+2026-10-23 20:34:19 | INFO | RARI | window 2021-11-01 | 11,191 unique events
+2026-10-23 20:34:25 | INFO | RARI | window 2021-12-01 | 9,031 unique events
+2026-10-23 20:34:29 | INFO | RARI | window 2022-01-01 | 8,681 unique events
+2026-10-23 20:34:32 | INFO | RARI | window 2022-02-01 | 5,755 unique events
+2026-10-23 20:34:34 | INFO | RARI | window 2022-03-01 | 6,142 unique events
+2026-10-23 20:34:35 | INFO | RARI | window 2022-04-01 | 2,652 unique events
+2026-10-23 20:34:36 | INFO | RARI | window 2022-05-01 | 3,973 unique events
+2026-10-23 20:34:37 | INFO | RARI | window 2022-06-01 | 3,024 unique events
+2026-10-23 20:34:37 | INFO | RARI | window 2022-07-01 | 4,701 unique events
+2026-10-23 20:34:38 | INFO | RARI | window 2022-08-01 | 2,676 unique events
+2026-10-23 20:34:39 | INFO | RARI | window 2022-09-01 | 2,383 unique events
+2026-10-23 20:34:39 | INFO | RARI | window 2022-10-01 | 3,758 unique events
+2026-10-23 20:34:40 | INFO | RARI | window 2022-11-01 | 11,617 unique events
+2026-10-23 20:34:43 | INFO | RARI | window 2022-12-01 | 5,021 unique events
+2026-10-23 20:34:44 | INFO | RARI | window 2023-01-01 | 3,338 unique events
+2026-10-23 20:34:45 | INFO | RARI | window 2023-02-01 | 3,184 unique events
+2026-10-23 20:34:46 | INFO | RARI | window 2023-03-01 | 1,880 unique events
+2026-10-23 20:34:46 | INFO | RARI | window 2023-04-01 | 1,999 unique events
+2026-10-23 20:34:47 | INFO | RARI | window 2023-05-01 | 996 unique events
+2026-10-23 20:34:47 | INFO | RARI | window 2023-06-01 | 1,907 unique events
+2026-10-23 20:34:47 | INFO | RARI | window 2023-07-01 | 994 unique events
+2026-10-23 20:34:48 | INFO | RARI | window 2023-08-01 | 731 unique events
+2026-10-23 20:34:48 | INFO | RARI | window 2023-09-01 | 1,099 unique events
+2026-10-23 20:34:48 | INFO | RARI | window 2023-10-01 | 610 unique events
+2026-10-23 20:34:48 | INFO | RARI | window FULL_PERIOD | 502,202 unique events
+2026-10-23 20:42:33 | INFO | RARI | tail frequency/in_degree: power law not rejected; heavy-tailed, better described by lognormal
+2026-10-23 20:43:47 | INFO | RARI | tail frequency/out_degree: power law rejected by bootstrap GOF; heavy-tailed, better described by lognormal
+2026-10-23 20:47:18 | INFO | RARI | tail frequency/undirected_degree: power law rejected by bootstrap GOF; heavy-tailed, better described by lognormal
+2026-10-23 20:50:13 | INFO | RARI | tail frequency/in_strength: power law rejected by bootstrap GOF; heavy-tailed, better described by lognormal
+2026-10-23 20:52:07 | INFO | RARI | tail frequency/out_strength: power law rejected by bootstrap GOF; heavy-tailed, better described by lognormal
+2026-10-23 20:55:56 | INFO | RARI | tail raw_volume/in_strength: power law not rejected; preferred over exponential; other alternatives indistinguishable
+2026-10-23 20:56:19 | INFO | RARI | tail raw_volume/out_strength: power law not rejected; preferred over exponential; other alternatives indistinguishable
+2026-10-23 20:59:47 | INFO | RARI | finished in 1751.7 s

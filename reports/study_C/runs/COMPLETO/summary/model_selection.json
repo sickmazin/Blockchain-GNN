@@ -1,0 +1,51 @@
+{
+  "criterion": "highest mean validation PR-AUC over seeds (test metrics not used for selection)",
+  "model": "random_forest",
+  "feature_set": "all",
+  "n_seeds": 1,
+  "val_pr_auc_mean": 0.9590968196240376,
+  "test_pr_auc_mean": 0.6619067688539781,
+  "test_f1_mean": 0.7181008902077152,
+  "ranking_by_val_pr_auc": [
+    {
+      "model": "random_forest",
+      "feature_set": "all",
+      "val_pr_auc_mean": 0.9590968196240376
+    },
+    {
+      "model": "random_forest",
+      "feature_set": "local",
+      "val_pr_auc_mean": 0.9487296047987973
+    },
+    {
+      "model": "mlp",
+      "feature_set": "local",
+      "val_pr_auc_mean": 0.9330439410776924
+    },
+    {
+      "model": "graphsage",
+      "feature_set": "local",
+      "val_pr_auc_mean": 0.8859639418153143
+    },
+    {
+      "model": "mlp",
+      "feature_set": "all",
+      "val_pr_auc_mean": 0.8727767720318867
+    },
+    {
+      "model": "graphsage",
+      "feature_set": "all",
+      "val_pr_auc_mean": 0.8660515774797325
+    },
+    {
+      "model": "gat",
+      "feature_set": "all",
+      "val_pr_auc_mean": 0.8408252577813755
+    },
+    {
+      "model": "gat",
+      "feature_set": "local",
+      "val_pr_auc_mean": 0.8366911028925561
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "run_id": "SNA",
+  "started_utc": "2026-10-23T18:30:33.874566+00:00",
+  "preprocessing_version": "2.1",
+  "seed": 42,
+  "analysis_fingerprint": "4b7ef6b56abdd250",
+  "git": {
+    "commit": "07d6167660e0b6e3bb7e9dce8f6e605323311c33",
+    "dirty": true
+  },
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "networkx": "3.6.1",
+    "igraph": "1.0.0",
+    "leidenalg": "0.12.0",
+    "matplotlib": "3.11.2"
+  },
+  "distance_rule": "distance = 1 / log(1 + w)",
+  "variants": {
+    "frequency": "transfer count",
+    "raw_volume": "raw token volume",
+    "log1p_volume": "log(1 + raw token volume)"
+  },
+  "selected_tokens": [
+    "RARI",
+    "SWAP",
+    "BITCOIN",
+    "SUPER"
+  ],
+  "selection_criterion": "explicit: ['RARI', 'SWAP', 'BITCOIN', 'SUPER']",
+  "source_files": {
+    "RARI": {
+      "path": "C:\\PROJECT\\Blockchain-GNN\\datasets\\TGS_edgelists\\RARI_edgelist.txt",
+      "size_bytes": 423386954,
+      "mtime_ns": 1792481363788610100,
+      "sha256": "28768347aafc9e8dafbb33a9a59b772c571d8ac19493213307e5cf05373c6ed6"
+    },
+    "SWAP": {
+      "path": "C:\\PROJECT\\Blockchain-GNN\\datasets\\TGS_edgelists\\SWAP_edgelist.txt",
+      "size_bytes": 416589082,
+      "mtime_ns": 1792481373742548600,
+      "sha256": "5482a5242bca6c4402b9594491000acf788c7aa3766883590cd376aad9104d89"
+    },
+    "BITCOIN": {
+      "path": "C:\\PROJECT\\Blockchain-GNN\\datasets\\TGS_edgelists\\BITCOIN_edgelist.txt",
+      "size_bytes": 252924353,
+      "mtime_ns": 1792481333781043600,
+      "sha256": "8baea13e569b0b3ba5a42caa42cd503f58aa5cd83c771d35ff414127ab2dd8a2"
+    },
+    "SUPER": {
+      "path": "C:\\PROJECT\\Blockchain-GNN\\datasets\\TGS_edgelists\\SUPER_edgelist.txt",
+      "size_bytes": 395631800,
+      "mtime_ns": 1792481372157403900,
+      "sha256": "2f3ec71f61002d2e97fddb56b7c1eca7ba6f7cb1366f6455ff30b21f55d840d2"
+    }
+  },
+  "token_results": [
+    {
+      "finished_utc": "2026-10-23T19:00:13.913943+00:00",
+      "recognised_from": "analysis_status.csv",
+      "token": "BITCOIN",
+      "seconds": 732.1,
+      "failed_steps": 0,
+      "steps": 71,
+      "unique_events": 324332
+    },
+    {
+      "finished_utc": "2026-10-23T19:00:13.913943+00:00",
+      "recognised_from": "analysis_status.csv",
+      "token": "RARI",
+      "seconds": 1751.7,
+      "failed_steps": 0,
+      "steps": 377,
+      "unique_events": 502202
+    },
+    {
+      "finished_utc": "2026-10-23T20:09:56.766092+00:00",
+      "token": "SUPER",
+      "seconds": 1348.1,
+      "failed_steps": 0,
+      "steps": 314,
+      "unique_events": 499718
+    },
+    {
+      "finished_utc": "2026-10-23T19:00:13.913943+00:00",
+      "recognised_from": "analysis_status.csv",
+      "token": "SWAP",
+      "seconds": 1655.7,
+      "failed_steps": 0,
+      "steps": 377,
+      "unique_events": 507933
+    }
+  ],
+  "invocations": [
+    {
+      "started_utc": "2026-10-23T19:47:28.335124+00:00",
+      "config": "invocations/20261023T194728Z_config.toml",
+      "requested": [
+        "RARI",
+        "SWAP",
+        "BITCOIN",
+        "SUPER"
+      ],
+      "analysed": [
+        "SUPER"
+      ],
+      "reused": [
+        "RARI",
+        "SWAP",
+        "BITCOIN"
+      ],
+      "git": {
+        "commit": "07d6167660e0b6e3bb7e9dce8f6e605323311c33",
+        "dirty": true
+      }
+    }
+  ],
+  "cross_token_overlap": "ok",
+  "finished_utc": "2026-10-23T20:10:49.188119+00:00",
+  "seconds": 1400.9
+}
