@@ -1072,8 +1072,17 @@ I tre studi danno una risposta coerente: la \textbf{struttura} del \textbf{grafo
 Lo Studio A mostra reti organizzate
 attorno a pochi hub, con volume estremamente concentrato (Gini maggiore di
 $0{,}95$), periferia a stella priva di triangoli e alto ricambio mensile.
-Le reti hanno code pesanti ma \textbf{non sono né scale-free né small-world}. Questa
-struttura spiega i risultati dello Studio B. Sapere \emph{chi} è attivo
+
+\begin{quote}
+\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\itshape
+Le reti mostrano \textbf{gradi eterogenei a coda pesante} e \textbf{distanze
+medie brevi}, tipiche di molte reti reali, ma \textbf{non sono né scale-free}
+(la power-law è rifiutata nella maggior parte dei casi) \textbf{né
+small-world} (clustering inferiore al modello nullo, $\sigma < 1$). La
+struttura è più vicina a un modello \textbf{hub-and-spoke disassortativo}.}}
+\end{quote}
+
+Questa struttura spiega i risultati dello Studio B. Sapere \emph{chi} è attivo
 basta già a una baseline di sola popolarità per ottenere buona parte delle
 prestazioni con negativi uniformi, mentre le euristiche basate su vicini
 comuni falliscono per l'assenza di triangoli. Solo GraphSAGE estrae
@@ -1193,6 +1202,5 @@ risulterebbe sovrastimato.
 \bibliography{references}
 
 \end{document}
-
 
 
