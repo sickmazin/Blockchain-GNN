@@ -7,6 +7,7 @@
 % Packages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern} % vector fonts: T1 alone falls back to bitmap (blurry) fonts
 \usepackage[italian]{babel}
 \usepackage[top=1cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{amsmath}
@@ -141,8 +142,18 @@ identificativi interi), i token con il maggior numero di trasferimenti unici.
 SWAP è anche il token dello Studio B: tra i token a indirizzi esadecimali è
 quello con più trasferimenti unici tra indirizzi distinti dopo la rimozione
 di mint, burn e self-loop ($507\,478$ eventi).
-Mentre il token chiamato ``BITCOIN'' è un token ERC-20 su Ethereum e non ha relazione
-con la blockchain Bitcoin del dataset Elliptic usato nello Studio C.
+
+In breve, i quattro token sono:
+\begin{itemize}
+    \item \textbf{RARI}: token di governance di Rarible, marketplace di NFT;
+    \item \textbf{SWAP}: token di TrustSwap, piattaforma DeFi per scambi e
+          pagamenti programmati;
+    \item \textbf{BITCOIN}: meme coin ERC-20 il cui nome reale è
+          \emph{HarryPotterObamaSonic10Inu}; nonostante il ticker non ha alcuna
+          relazione con la blockchain Bitcoin del dataset Elliptic usato nello
+          Studio C;
+    \item \textbf{SUPER}: token di SuperFarm, piattaforma per NFT e gaming.
+\end{itemize}
 
 \begin{table}[H]
 \centering
