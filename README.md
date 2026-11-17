@@ -303,3 +303,8 @@ Tutti i seed sono fissati nei file di configurazione.
 - Clauset et al. (2009), power-law; Watts & Strogatz (1998) e Humphries & Gurney (2008), small-world; Traag et al. (2019), Leiden.
 
 La bibliografia completa è in [`docs/report/references.bib`](docs/report/references.bib).
+
+----
+This project has been developed as a coursework assigned for the class "Social Networks and Media Analysis", Spring 2026 (Instructor: prof. [Andrea Tagarelli](https://mlnteam-unical.github.io/)) at the DIMES Department, University of Calabria, Italy.
+
+Developed with care and dedication by Mattia Corigliano.
