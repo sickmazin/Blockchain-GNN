@@ -307,3 +307,4 @@ La bibliografia completa è in [`docs/report/references.bib`](docs/report/refere
 ----
 This project has been developed as a coursework assigned for the class "Social Networks and Media Analysis", Spring 2026 (Instructor: prof. [Andrea Tagarelli](https://mlnteam-unical.github.io/)) at the DIMES Department, University of Calabria, Italy.
 
+Developed with care and dedication by Mattia Corigliano.
